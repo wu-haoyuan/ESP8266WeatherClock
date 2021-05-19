@@ -48,7 +48,7 @@ String GetUrl = "http://quan.suning.com/getSysTime.do";//用苏宁的授时获�
 String response;
 NTPClient timeClient(ntpUDP, "ntp1.aliyun.com", 60 * 60 * 8, 30 * 60 * 1000);	//使用阿里云的校时服务器
 
-String UserKey = "7c298b3c60c544e4aa3a7713feccb235";	//私钥获取地址 https://dev.heweather.com/docs/start/get-api-key
+String UserKey = "xxxxxxxxxxx";	//私钥获取地址 https://dev.heweather.com/docs/start/get-api-key
 String Location = "101010100";							// 城市代码 https://github.com/heweather/LocationList ,表中的Location_ID ，或至 https://where.qweather.com/index.html 查询
 String Unit = "m";										// 公制-m/英制-i
 String Lang = "zh";										// 语言 英文-en/中文-zh
