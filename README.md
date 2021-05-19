@@ -1,6 +1,6 @@
 # ESP8266_WeatherClock
 
-  基于ESP8266的天气时钟，天气信息来自和风天气时间信息来自阿里云
+  基于ESP8266的天气时钟，天气信息来自和风天气时间信息来自阿里云及苏宁授时
 
  - 和风天气私钥获取[链接](https://dev.heweather.com/docs/start/get-api-key)
  - 和风天气城市代码获取[链接](https://github.com/heweather/LocationList) 或至[城市代码查询网址](https://where.qweather.com/index.html)查询
