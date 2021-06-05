@@ -14,8 +14,7 @@
 ## 硬件
 - 开发版使用NodeMCU开发板使用有线供电（单纯因为手上没有电池供电的元器件）
 - 屏幕使用1.8寸TFT屏，驱动为ST7735，屏幕大小是128*160
-- 硬件接线图![接线图](https://user-images.githubusercontent.com/62695662/118657744-5173b800-b81e-11eb-8425-1bc0a8ef24cf.PNG)
-
+- 硬件接线图![屏幕截图 2021-06-05 154525](https://user-images.githubusercontent.com/62695662/120884343-46d66280-c615-11eb-8fc6-8e34a5da1bfc.jpg)
 
 ## 使用
 
@@ -31,4 +30,10 @@
 3. https://blog.csdn.net/qq_35274097/article/details/111501933?utm_medium=distribute.pc_relevant.none-task-blog-baidujs_utm_term-0&spm=1001.2101.3001.4242
 4. https://blog.csdn.net/weixin_42880082/article/details/114366362?ops_request_misc=&request_id=&biz_id=102&utm_term=ESP8266web%E9%85%8D%E7%BD%91&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-6-.pc_search_result_no_baidu_js&spm=1018.2226.3001.4187
 
+---
 
+## 2021/06/05更新
+
+- 增加屏幕背光控制设置为凌晨00：10熄灭早上8：00点亮
+- 修改部分代码增加WiFi休眠减少电量消耗
+- 添加TFT屏与NodeMCU转接板及3D打印外壳
