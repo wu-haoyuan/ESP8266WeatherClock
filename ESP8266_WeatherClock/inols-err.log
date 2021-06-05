@@ -1,0 +1,1275 @@
+
+
+
+
+
+
+
+Started logging.
+2021/06/05 15:40:03 logging to d:\project\ESP8266资料\ESP8266天气时钟\WeatherClock\ESP8266_WeatherClock\inols.log
+2021/06/05 15:40:03 Initial board configuration: {"NodeMCU 1.0 (ESP-12E Module)" esp8266:esp8266:nodemcuv2}
+2021/06/05 15:40:03 Language server build path: C:\Users\wuhao\AppData\Local\Temp\arduino-language-server402730367
+2021/06/05 15:40:03 Language server build sketch root: C:\Users\wuhao\AppData\Local\Temp\arduino-language-server402730367\sketch
+2021/06/05 15:40:03 [92mIDE --> LS     CL: REQUEST initialize 0: [0m
+2021/06/05 15:40:03 IDE --> initialize 0 [93m locked[0m
+2021/06/05 15:40:03 IDE --> initialize 0 [93m unlocked[0m
+2021/06/05 15:40:03 INIT--- initializing workbench
+2021/06/05 15:40:03 INIT--- [93m locked[0m
+2021/06/05 15:40:03 [91mIDE <-- LS     CL: ANSWER UNBOUND (0): [0m
+2021/06/05 15:40:03     --> initialize(file:///d%3A/project/ESP8266%E8%B5%84%E6%96%99/ESP8266%E5%A4%A9%E6%B0%94%E6%97%B6%E9%92%9F/WeatherClock/ESP8266_WeatherClock)
+2021/06/05 15:40:03 running:  d:\Arduino2.0\ArduinoIDE\resources\app\node_modules\arduino-ide-extension\build\arduino-cli.exe --config-file c:\Users\wuhao\.arduinoIDE\arduino-cli.yaml compile --fqbn esp8266:esp8266:nodemcuv2 --only-compilation-database --clean --source-override C:\Users\wuhao\AppData\Local\Temp\785977042 --build-path C:\Users\wuhao\AppData\Local\Temp\arduino-language-server402730367 --format json D:\project\ESP8266资料\ESP8266天气时钟\WeatherClock\ESP8266_WeatherClock
+2021/06/05 15:40:03 [92mIDE --> LS     CL: NOTIFICATION initialized: [0m
+2021/06/05 15:40:39 arduino-cli output: {
+  "compiler_out": "",
+  "compiler_err": "",
+  "builder_result": {
+    "build_path": "C:\\Users\\wuhao\\AppData\\Local\\Temp\\arduino-language-server402730367",
+    "used_libraries": [
+      {
+        "name": "ESP8266_Heweather-master",
+        "author": "Ldufan",
+        "maintainer": "Ldufan",
+        "sentence": "ESP8266 heweather API Application Library",
+        "paragraph": "Use ESP8266 to get Weather information from free heweather API.",
+        "website": "https://github.com/Ldufan/ESP8266_Heweather",
+        "category": "Other",
+        "architectures": [
+          "*"
+        ],
+        "install_dir": "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\ESP8266_Heweather-master",
+        "source_dir": "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\ESP8266_Heweather-master\\src",
+        "real_name": "ESP8266_Heweather",
+        "version": "0.0.1",
+        "license": "Unspecified",
+        "location": 1,
+        "layout": 1,
+        "examples": [
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\ESP8266_Heweather-master\\example\\AirQuality",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\ESP8266_Heweather-master\\example\\WeatherForecast",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\ESP8266_Heweather-master\\example\\WeatherNow"
+        ],
+        "provides_includes": [
+          "AirQuality.h",
+          "ESP8266_Heweather.h",
+          "WeatherForecast.h",
+          "WeatherNow.h"
+        ]
+      },
+      {
+        "name": "ArduinoJson",
+        "author": "Benoit Blanchon \u003cblog.benoitblanchon.fr\u003e",
+        "maintainer": "Benoit Blanchon \u003cblog.benoitblanchon.fr\u003e",
+        "sentence": "A simple and efficient JSON library for embedded C++.",
+        "paragraph": "ArduinoJson supports ✔ serialization, ✔ deserialization, ✔ MessagePack, ✔ fixed allocation, ✔ zero-copy, ✔ streams, ✔ filtering, and more. It is the most popular Arduino library on GitHub ❤❤❤❤❤. Check out arduinojson.org for a comprehensive documentation.",
+        "website": "https://arduinojson.org/?utm_source=meta\u0026utm_medium=library.properties",
+        "category": "Data Processing",
+        "architectures": [
+          "*"
+        ],
+        "install_dir": "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\ArduinoJson",
+        "source_dir": "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\ArduinoJson\\src",
+        "real_name": "ArduinoJson",
+        "version": "6.18.0",
+        "license": "MIT",
+        "location": 1,
+        "layout": 1,
+        "examples": [
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\ArduinoJson\\examples\\JsonConfigFile",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\ArduinoJson\\examples\\JsonFilterExample",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\ArduinoJson\\examples\\JsonGeneratorExample",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\ArduinoJson\\examples\\JsonHttpClient",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\ArduinoJson\\examples\\JsonParserExample",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\ArduinoJson\\examples\\JsonServer",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\ArduinoJson\\examples\\JsonUdpBeacon",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\ArduinoJson\\examples\\MsgPackParser",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\ArduinoJson\\examples\\ProgmemExample",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\ArduinoJson\\examples\\StringExample"
+        ],
+        "provides_includes": [
+          "ArduinoJson.h",
+          "ArduinoJson.hpp"
+        ]
+      },
+      {
+        "name": "ESP8266WiFi",
+        "author": "Ivan Grokhotkov",
+        "maintainer": "Ivan Grokhtkov \u003civan@esp8266.com\u003e",
+        "sentence": "Enables network connection (local and Internet) using the ESP8266 built-in WiFi.",
+        "paragraph": "With this library you can instantiate Servers, Clients and send/receive UDP packets through WiFi. The shield can connect either to open or encrypted networks (WEP, WPA). The IP address can be assigned statically or through a DHCP. The library can also manage DNS.",
+        "category": "Communication",
+        "architectures": [
+          "esp8266"
+        ],
+        "install_dir": "C:\\Users\\wuhao\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\3.0.0\\libraries\\ESP8266WiFi",
+        "source_dir": "C:\\Users\\wuhao\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\3.0.0\\libraries\\ESP8266WiFi\\src",
+        "container_platform": "esp8266:esp8266@3.0.0",
+        "real_name": "ESP8266WiFi",
+        "dot_a_linkage": true,
+        "version": "1.0",
+        "license": "Unspecified",
+        "location": 2,
+        "layout": 1,
+        "examples": [
+          "C:\\Users\\wuhao\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\3.0.0\\libraries\\ESP8266WiFi\\examples\\BearSSL_CertStore",
+          "C:\\Users\\wuhao\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\3.0.0\\libraries\\ESP8266WiFi\\examples\\BearSSL_MaxFragmentLength",
+          "C:\\Users\\wuhao\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\3.0.0\\libraries\\ESP8266WiFi\\examples\\BearSSL_Server",
+          "C:\\Users\\wuhao\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\3.0.0\\libraries\\ESP8266WiFi\\examples\\BearSSL_ServerClientCert",
+          "C:\\Users\\wuhao\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\3.0.0\\libraries\\ESP8266WiFi\\examples\\BearSSL_Sessions",
+          "C:\\Users\\wuhao\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\3.0.0\\libraries\\ESP8266WiFi\\examples\\BearSSL_Validation",
+          "C:\\Users\\wuhao\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\3.0.0\\libraries\\ESP8266WiFi\\examples\\HTTPSRequest",
+          "C:\\Users\\wuhao\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\3.0.0\\libraries\\ESP8266WiFi\\examples\\IPv6",
+          "C:\\Users\\wuhao\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\3.0.0\\libraries\\ESP8266WiFi\\examples\\NTPClient",
+          "C:\\Users\\wuhao\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\3.0.0\\libraries\\ESP8266WiFi\\examples\\PagerServer",
+          "C:\\Users\\wuhao\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\3.0.0\\libraries\\ESP8266WiFi\\examples\\RangeExtender-NAPT",
+          "C:\\Users\\wuhao\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\3.0.0\\libraries\\ESP8266WiFi\\examples\\StaticLease",
+          "C:\\Users\\wuhao\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\3.0.0\\libraries\\ESP8266WiFi\\examples\\Udp",
+          "C:\\Users\\wuhao\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\3.0.0\\libraries\\ESP8266WiFi\\examples\\WiFiAccessPoint",
+          "C:\\Users\\wuhao\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\3.0.0\\libraries\\ESP8266WiFi\\examples\\WiFiClient",
+          "C:\\Users\\wuhao\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\3.0.0\\libraries\\ESP8266WiFi\\examples\\WiFiClientBasic",
+          "C:\\Users\\wuhao\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\3.0.0\\libraries\\ESP8266WiFi\\examples\\WiFiEcho",
+          "C:\\Users\\wuhao\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\3.0.0\\libraries\\ESP8266WiFi\\examples\\WiFiEvents",
+          "C:\\Users\\wuhao\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\3.0.0\\libraries\\ESP8266WiFi\\examples\\WiFiManualWebServer",
+          "C:\\Users\\wuhao\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\3.0.0\\libraries\\ESP8266WiFi\\examples\\WiFiMulti",
+          "C:\\Users\\wuhao\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\3.0.0\\libraries\\ESP8266WiFi\\examples\\WiFiScan",
+          "C:\\Users\\wuhao\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\3.0.0\\libraries\\ESP8266WiFi\\examples\\WiFiShutdown",
+          "C:\\Users\\wuhao\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\3.0.0\\libraries\\ESP8266WiFi\\examples\\WiFiTelnetToSerial"
+        ],
+        "provides_includes": [
+          "ArduinoWiFiServer.h",
+          "BearSSLHelpers.h",
+          "CertStoreBearSSL.h",
+          "ESP8266WiFi.h",
+          "ESP8266WiFiAP.h",
+          "ESP8266WiFiGeneric.h",
+          "ESP8266WiFiGratuitous.h",
+          "ESP8266WiFiMulti.h",
+          "ESP8266WiFiSTA.h",
+          "ESP8266WiFiScan.h",
+          "ESP8266WiFiType.h",
+          "WiFiClient.h",
+          "WiFiClientSecure.h",
+          "WiFiClientSecureBearSSL.h",
+          "WiFiServer.h",
+          "WiFiServerSecure.h",
+          "WiFiServerSecureBearSSL.h",
+          "WiFiUdp.h"
+        ]
+      },
+      {
+        "name": "ESP8266HTTPClient",
+        "author": "Markus Sattler",
+        "maintainer": "Markus Sattler",
+        "sentence": "http Client for ESP8266",
+        "website": "https://github.com/esp8266/Arduino/blob/master/libraries/ESP8266HTTPClient",
+        "category": "Communication",
+        "architectures": [
+          "esp8266"
+        ],
+        "install_dir": "C:\\Users\\wuhao\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\3.0.0\\libraries\\ESP8266HTTPClient",
+        "source_dir": "C:\\Users\\wuhao\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\3.0.0\\libraries\\ESP8266HTTPClient\\src",
+        "container_platform": "esp8266:esp8266@3.0.0",
+        "real_name": "ESP8266HTTPClient",
+        "dot_a_linkage": true,
+        "version": "1.2",
+        "license": "Unspecified",
+        "location": 2,
+        "layout": 1,
+        "examples": [
+          "C:\\Users\\wuhao\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\3.0.0\\libraries\\ESP8266HTTPClient\\examples\\Authorization",
+          "C:\\Users\\wuhao\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\3.0.0\\libraries\\ESP8266HTTPClient\\examples\\BasicHttpClient",
+          "C:\\Users\\wuhao\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\3.0.0\\libraries\\ESP8266HTTPClient\\examples\\BasicHttpsClient",
+          "C:\\Users\\wuhao\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\3.0.0\\libraries\\ESP8266HTTPClient\\examples\\DigestAuthorization",
+          "C:\\Users\\wuhao\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\3.0.0\\libraries\\ESP8266HTTPClient\\examples\\PostHttpClient",
+          "C:\\Users\\wuhao\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\3.0.0\\libraries\\ESP8266HTTPClient\\examples\\ReuseConnection",
+          "C:\\Users\\wuhao\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\3.0.0\\libraries\\ESP8266HTTPClient\\examples\\ReuseConnectionV2",
+          "C:\\Users\\wuhao\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\3.0.0\\libraries\\ESP8266HTTPClient\\examples\\StreamHttpClient",
+          "C:\\Users\\wuhao\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\3.0.0\\libraries\\ESP8266HTTPClient\\examples\\StreamHttpsClient"
+        ],
+        "provides_includes": [
+          "ESP8266HTTPClient.h"
+        ]
+      },
+      {
+        "name": "NTPClient",
+        "author": "Fabrice Weinberg",
+        "maintainer": "Fabrice Weinberg \u003cfabrice@weinberg.me\u003e",
+        "sentence": "An NTPClient to connect to a time server",
+        "paragraph": "Get time from a NTP server and keep it in sync.",
+        "website": "https://github.com/arduino-libraries/NTPClient",
+        "category": "Timing",
+        "architectures": [
+          "*"
+        ],
+        "install_dir": "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\NTPClient",
+        "source_dir": "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\NTPClient",
+        "real_name": "NTPClient",
+        "version": "3.2.0",
+        "license": "Unspecified",
+        "location": 1,
+        "examples": [
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\NTPClient\\examples\\Advanced",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\NTPClient\\examples\\Basic"
+        ],
+        "provides_includes": [
+          "NTPClient.h"
+        ]
+      },
+      {
+        "name": "ESP8266WebServer",
+        "author": "Ivan Grokhotkov",
+        "maintainer": "Ivan Grokhtkov \u003civan@esp8266.com\u003e",
+        "sentence": "Simple web server library",
+        "paragraph": "The library supports HTTP GET and POST requests, provides argument parsing, handles one client at a time.",
+        "category": "Communication",
+        "architectures": [
+          "esp8266"
+        ],
+        "install_dir": "C:\\Users\\wuhao\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\3.0.0\\libraries\\ESP8266WebServer",
+        "source_dir": "C:\\Users\\wuhao\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\3.0.0\\libraries\\ESP8266WebServer\\src",
+        "container_platform": "esp8266:esp8266@3.0.0",
+        "real_name": "ESP8266WebServer",
+        "dot_a_linkage": true,
+        "version": "1.0",
+        "license": "Unspecified",
+        "location": 2,
+        "layout": 1,
+        "examples": [
+          "C:\\Users\\wuhao\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\3.0.0\\libraries\\ESP8266WebServer\\examples\\AdvancedWebServer",
+          "C:\\Users\\wuhao\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\3.0.0\\libraries\\ESP8266WebServer\\examples\\FSBrowser",
+          "C:\\Users\\wuhao\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\3.0.0\\libraries\\ESP8266WebServer\\examples\\Graph",
+          "C:\\Users\\wuhao\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\3.0.0\\libraries\\ESP8266WebServer\\examples\\HelloServer",
+          "C:\\Users\\wuhao\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\3.0.0\\libraries\\ESP8266WebServer\\examples\\HelloServerBearSSL",
+          "C:\\Users\\wuhao\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\3.0.0\\libraries\\ESP8266WebServer\\examples\\HttpAdvancedAuth",
+          "C:\\Users\\wuhao\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\3.0.0\\libraries\\ESP8266WebServer\\examples\\HttpBasicAuth",
+          "C:\\Users\\wuhao\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\3.0.0\\libraries\\ESP8266WebServer\\examples\\HttpHashCredAuth",
+          "C:\\Users\\wuhao\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\3.0.0\\libraries\\ESP8266WebServer\\examples\\PathArgServer",
+          "C:\\Users\\wuhao\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\3.0.0\\libraries\\ESP8266WebServer\\examples\\PostServer",
+          "C:\\Users\\wuhao\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\3.0.0\\libraries\\ESP8266WebServer\\examples\\ServerSentEvents",
+          "C:\\Users\\wuhao\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\3.0.0\\libraries\\ESP8266WebServer\\examples\\SimpleAuthentication",
+          "C:\\Users\\wuhao\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\3.0.0\\libraries\\ESP8266WebServer\\examples\\WebUpdate"
+        ],
+        "provides_includes": [
+          "ESP8266WebServer-impl.h",
+          "ESP8266WebServer.h",
+          "ESP8266WebServerSecure.h",
+          "Parsing-impl.h",
+          "Uri.h"
+        ]
+      },
+      {
+        "name": "ESP8266mDNS",
+        "author": "multiple, see files",
+        "maintainer": "LaborEtArs",
+        "sentence": "Creates a mDNS responder.",
+        "paragraph": "Creates a mDNS responder to ensure host domain uniqueness in local networks and to allow for mDNS service discovery and announcment.",
+        "website": "https://github.com/LaborEtArs/ESP8266mDNS",
+        "category": "Communication",
+        "architectures": [
+          "esp8266"
+        ],
+        "install_dir": "C:\\Users\\wuhao\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\3.0.0\\libraries\\ESP8266mDNS",
+        "source_dir": "C:\\Users\\wuhao\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\3.0.0\\libraries\\ESP8266mDNS\\src",
+        "container_platform": "esp8266:esp8266@3.0.0",
+        "real_name": "ESP8266mDNS",
+        "dot_a_linkage": true,
+        "version": "1.2",
+        "license": "Unspecified",
+        "location": 2,
+        "layout": 1,
+        "examples": [
+          "C:\\Users\\wuhao\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\3.0.0\\libraries\\ESP8266mDNS\\examples\\LEAmDNS\\mDNS_Clock",
+          "C:\\Users\\wuhao\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\3.0.0\\libraries\\ESP8266mDNS\\examples\\LEAmDNS\\mDNS_ServiceMonitor",
+          "C:\\Users\\wuhao\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\3.0.0\\libraries\\ESP8266mDNS\\examples\\OTA-mDNS-LittleFS",
+          "C:\\Users\\wuhao\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\3.0.0\\libraries\\ESP8266mDNS\\examples\\mDNS-SD_Extended",
+          "C:\\Users\\wuhao\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\3.0.0\\libraries\\ESP8266mDNS\\examples\\mDNS_Web_Server"
+        ],
+        "provides_includes": [
+          "ESP8266mDNS.h",
+          "LEAmDNS.h",
+          "LEAmDNS_Priv.h",
+          "LEAmDNS_lwIPdefs.h"
+        ]
+      },
+      {
+        "name": "SPI",
+        "author": "Arduino",
+        "maintainer": "Arduino \u003cinfo@arduino.cc\u003e",
+        "sentence": "Enables the communication with devices that use the Serial Peripheral Interface (SPI) Bus. For all Arduino boards, BUT Arduino DUE.",
+        "website": "http://arduino.cc/en/Reference/SPI",
+        "category": "Signal Input/Output",
+        "architectures": [
+          "esp8266"
+        ],
+        "install_dir": "C:\\Users\\wuhao\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\3.0.0\\libraries\\SPI",
+        "source_dir": "C:\\Users\\wuhao\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\3.0.0\\libraries\\SPI",
+        "container_platform": "esp8266:esp8266@3.0.0",
+        "real_name": "SPI",
+        "dot_a_linkage": true,
+        "version": "1.0",
+        "license": "Unspecified",
+        "location": 2,
+        "provides_includes": [
+          "SPI.h"
+        ]
+      },
+      {
+        "name": "TFT_eSPI",
+        "author": "Bodmer",
+        "maintainer": "Bodmer",
+        "sentence": "TFT graphics library for Arduino processors with performance optimisation for RP2040, STM32, ESP8266 and ESP32",
+        "paragraph": "Supports TFT displays using drivers (ILI9341 etc) that operate with hardware SPI or 8 bit parallel.",
+        "website": "https://github.com/Bodmer/TFT_eSPI",
+        "category": "Display",
+        "architectures": [
+          "*"
+        ],
+        "install_dir": "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI",
+        "source_dir": "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI",
+        "real_name": "TFT_eSPI",
+        "version": "2.3.70",
+        "license": "Unspecified",
+        "location": 1,
+        "examples": [
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\160 x 128\\Arduino_Life",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\160 x 128\\Pong_v3",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\160 x 128\\RLE_Font_test",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\160 x 128\\TFT_Char_times",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\160 x 128\\TFT_Clock",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\160 x 128\\TFT_Clock_Digital",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\160 x 128\\TFT_Ellipse",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\160 x 128\\TFT_Meter_5",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\160 x 128\\TFT_Print_Test",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\160 x 128\\TFT_Rainbow",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\160 x 128\\TFT_flash_jpg",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\160 x 128\\TFT_graphicstest_PDQ3",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\160 x 128\\TFT_graphicstest_small",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\160 x 128\\UTFT_demo_fast",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\320 x 240\\All_Free_Fonts_Demo",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\320 x 240\\Cellular_Automata",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\320 x 240\\Free_Font_Demo",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\320 x 240\\Keypad_240x320",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\320 x 240\\RLE_Font_test",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\320 x 240\\Read_ID_bitbash",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\320 x 240\\TFT_ArcFill",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\320 x 240\\TFT_Char_times",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\320 x 240\\TFT_Clock",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\320 x 240\\TFT_Clock_Digital",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\320 x 240\\TFT_Custom_Fonts",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\320 x 240\\TFT_Ellipse",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\320 x 240\\TFT_FillArcSpiral",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\320 x 240\\TFT_Float_Test",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\320 x 240\\TFT_Mandlebrot",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\320 x 240\\TFT_Matrix",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\320 x 240\\TFT_Meter_linear",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\320 x 240\\TFT_Meters",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\320 x 240\\TFT_Pie_Chart",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\320 x 240\\TFT_Pong",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\320 x 240\\TFT_Print_Test",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\320 x 240\\TFT_Rainbow_one_lib",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\320 x 240\\TFT_Read_Reg",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\320 x 240\\TFT_Spiro",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\320 x 240\\TFT_Starfield",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\320 x 240\\TFT_String_Align",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\320 x 240\\TFT_Terminal",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\320 x 240\\TFT_graphicstest_PDQ",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\320 x 240\\TFT_graphicstest_one_lib",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\320 x 240\\UTFT_demo",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\480 x 320\\Cellular_Automata",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\480 x 320\\Demo_3D_cube",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\480 x 320\\Free_Font_Demo",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\480 x 320\\Graph_2",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\480 x 320\\Keypad_480x320",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\480 x 320\\TFT_Char_times",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\480 x 320\\TFT_Ellipse",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\480 x 320\\TFT_Meter_4",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\480 x 320\\TFT_Meters",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\480 x 320\\TFT_Padding_demo",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\480 x 320\\TFT_Print_Test",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\480 x 320\\TFT_Rainbow480",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\480 x 320\\TFT_String_Align",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\480 x 320\\TFT_flash_jpg",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\480 x 320\\TFT_graphicstest_one_lib",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\480 x 320\\TFT_ring_meter",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\480 x 320\\Touch_Controller_Demo",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\480 x 320\\UTFT_Demo_480x320",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\DMA test\\Bouncy_Circles",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\DMA test\\Flash_Jpg_DMA",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\DMA test\\SpriteRotatingCube",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\DMA test\\boing_ball",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\Generic\\Animated_Eyes_1",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\Generic\\Animated_Eyes_2",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\Generic\\ESP32_SDcard_jpeg",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\Generic\\ESP8266_uncannyEyes",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\Generic\\Local_Custom_Fonts",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\Generic\\On_Off_Button",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\Generic\\TFT_Button_Label_Datum",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\Generic\\TFT_Flash_Bitmap",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\Generic\\TFT_SPIFFS_BMP",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\Generic\\TFT_Screen_Capture",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\Generic\\Touch_calibrate",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\Generic\\Viewport_Demo",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\Generic\\Viewport_graphicstest",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\Generic\\alphaBlend_Test",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\Generic\\drawXBitmap",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\Smooth Fonts\\FLASH_Array\\Font_Demo_1_Array",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\Smooth Fonts\\FLASH_Array\\Font_Demo_2_Array",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\Smooth Fonts\\FLASH_Array\\Font_Demo_3_Array",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\Smooth Fonts\\FLASH_Array\\Font_Demo_4_Array",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\Smooth Fonts\\FLASH_Array\\Print_Smooth_Font",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\Smooth Fonts\\FLASH_Array\\Smooth_font_gradient",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\Smooth Fonts\\FLASH_Array\\Smooth_font_reading_TFT",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\Smooth Fonts\\FLASH_Array\\Unicode_test",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\Smooth Fonts\\LittleFS\\Font_Demo_1",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\Smooth Fonts\\LittleFS\\Font_Demo_2",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\Smooth Fonts\\LittleFS\\Font_Demo_3",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\Smooth Fonts\\LittleFS\\Font_Demo_4",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\Smooth Fonts\\LittleFS\\Print_Smooth_Font",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\Smooth Fonts\\LittleFS\\Smooth_font_gradient",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\Smooth Fonts\\LittleFS\\Smooth_font_reading_TFT",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\Smooth Fonts\\LittleFS\\Unicode_test",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\Smooth Fonts\\SD_Card\\ESP32_Smooth_Font_SD",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\Smooth Fonts\\SPIFFS\\Font_Demo_1",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\Smooth Fonts\\SPIFFS\\Font_Demo_2",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\Smooth Fonts\\SPIFFS\\Font_Demo_3",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\Smooth Fonts\\SPIFFS\\Font_Demo_4",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\Smooth Fonts\\SPIFFS\\Print_Smooth_Font",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\Smooth Fonts\\SPIFFS\\Smooth_font_gradient",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\Smooth Fonts\\SPIFFS\\Smooth_font_reading_TFT",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\Smooth Fonts\\SPIFFS\\Unicode_test",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\Sprite\\Animated_dial",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\Sprite\\One_bit_Sprite_Demo",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\Sprite\\One_bit_Yin_Yang",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\Sprite\\Orrery",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\Sprite\\Rotated_Sprite_1",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\Sprite\\Rotated_Sprite_2",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\Sprite\\Rotated_Sprite_3",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\Sprite\\Sprite_RLE_Font_test",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\Sprite\\Sprite_TFT_Rainbow",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\Sprite\\Sprite_draw",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\Sprite\\Sprite_draw_4bit",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\Sprite\\Sprite_image_4bit",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\Sprite\\Sprite_scroll",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\Sprite\\Sprite_scroll_16bit",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\Sprite\\Sprite_scroll_1bit",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\Sprite\\Sprite_scroll_4bit",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\Sprite\\Sprite_scroll_8bit",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\Sprite\\Sprite_scroll_wrap_1bit",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\Sprite\\Transparent_Sprite_Demo",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\Sprite\\Transparent_Sprite_Demo_4bit",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\Test and diagnostics\\Colour_Test",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\Test and diagnostics\\Read_User_Setup",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\Test and diagnostics\\TFT_ReadWrite_Test",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\Test and diagnostics\\Test_Touch_Controller",
+          "d:\\Users\\wuhao\\Documents\\Arduino\\libraries\\TFT_eSPI\\examples\\ePaper\\Floyd_Steinberg"
+        ],
+        "provides_includes": [
+          "TFT_eSPI.h"
+        ]
+      },
+      {
+        "name": "EEPROM",
+        "author": "Ivan Grokhotkov",
+        "maintainer": "Ivan Grokhotkov \u003civan@esp8266.com\u003e",
+        "sentence": "Enables reading and writing data to the permanent FLASH storage, up to 4kb.",
+        "website": "http://arduino.cc/en/Reference/EEPROM",
+        "category": "Data Storage",
+        "architectures": [
+          "esp8266"
+        ],
+        "install_dir": "C:\\Users\\wuhao\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\3.0.0\\libraries\\EEPROM",
+        "source_dir": "C:\\Users\\wuhao\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\3.0.0\\libraries\\EEPROM",
+        "container_platform": "esp8266:esp8266@3.0.0",
+        "real_name": "EEPROM",
+        "dot_a_linkage": true,
+        "version": "1.0",
+        "license": "Unspecified",
+        "location": 2,
+        "examples": [
+          "C:\\Users\\wuhao\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\3.0.0\\libraries\\EEPROM\\examples\\eeprom_clear",
+          "C:\\Users\\wuhao\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\3.0.0\\libraries\\EEPROM\\examples\\eeprom_read",
+          "C:\\Users\\wuhao\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\3.0.0\\libraries\\EEPROM\\examples\\eeprom_write"
+        ],
+        "provides_includes": [
+          "EEPROM.h"
+        ]
+      }
+    ]
+  },
+  "success": true
+}
+
+2021/06/05 15:40:39 running:  d:\Arduino2.0\ArduinoIDE\resources\app\node_modules\arduino-ide-extension\build\arduino-cli.exe --config-file c:\Users\wuhao\.arduinoIDE\arduino-cli.yaml config dump --format json
+2021/06/05 15:40:40 Arduino Data Dir ->  c:\Users\wuhao\AppData\Local\Arduino15
+2021/06/05 15:40:40     Starting clangd: d:\Arduino2.0\ArduinoIDE\resources\app\node_modules\arduino-ide-extension\build\bin\clangd.exe -log=verbose --compile-commands-dir=C:\Users\wuhao\AppData\Local\Temp\arduino-language-server402730367 -query-driver=c:\Users\wuhao\AppData\Local\Arduino15\packages\**
+2021/06/05 15:40:40 logging to d:\project\ESP8266资料\ESP8266天气时钟\WeatherClock\ESP8266_WeatherClock\inols-clangd.log
+2021/06/05 15:40:40 logging to d:\project\ESP8266资料\ESP8266天气时钟\WeatherClock\ESP8266_WeatherClock\inols-clangd-err.log
+2021/06/05 15:40:40 [91mIDE     LS --> CL: REQUEST initialize 0: [0m
+2021/06/05 15:40:40 [92mIDE     LS <-- CL: ANSWER initialize 0 (0): [0m
+2021/06/05 15:40:40 [91mIDE     LS --> CL: NOTIFICATION initialized: [0m
+2021/06/05 15:40:40 INIT--- initializing workbench (done)
+2021/06/05 15:40:40 INIT--- [93m unlocked[0m
+2021/06/05 15:40:40 IDE --> initialized notif1 [93m read-locked[0m
+2021/06/05 15:40:40 IDE --> initialized notif1 notification is not propagated to clangd
+2021/06/05 15:40:40 IDE --> initialized notif1 [93m read-unlocked[0m
+2021/06/05 15:40:40 [92mIDE --> LS     CL: NOTIFICATION textDocument/didOpen: [0m
+2021/06/05 15:40:40 IDE --> textDocument/didOpen notif2 [93m locked[0m
+2021/06/05 15:40:40 IDE --> textDocument/didOpen notif2 (file:///d%3A/project/ESP8266%E8%B5%84%E6%96%99/ESP8266%E5%A4%A9%E6%B0%94%E6%97%B6%E9%92%9F/WeatherClock/ESP8266_WeatherClock/ESP8266_WeatherClock.ino@1 as 'cpp')
+2021/06/05 15:40:40     increasing .ino tracked files count: 1
+2021/06/05 15:40:40 IDE --> textDocument/didOpen notif2 to clang: didOpen(file:///C:/Users/wuhao/AppData/Local/Temp/arduino-language-server402730367/sketch/ESP8266_WeatherClock.ino.cpp@1 as 'cpp')
+2021/06/05 15:40:40 IDE --> textDocument/didOpen notif2 sent to Clang
+2021/06/05 15:40:40 [91mIDE     LS --> CL: NOTIFICATION textDocument/didOpen: [0m
+2021/06/05 15:40:40 IDE --> textDocument/didOpen notif2 Queued resfreshing document symbols
+2021/06/05 15:40:40 IDE --> textDocument/didOpen notif2 [93m unlocked[0m
+2021/06/05 15:40:40 SYLD--- [93m read-locked[0m
+2021/06/05 15:40:40 SYLD--- requesting documentSymbol for file:///C:/Users/wuhao/AppData/Local/Temp/arduino-language-server402730367/sketch/ESP8266_WeatherClock.ino.cpp
+2021/06/05 15:40:40 SYLD--- [93m read-unlocked[0m
+2021/06/05 15:40:40 [91mIDE     LS --> CL: REQUEST textDocument/documentSymbol 1: [0m
+2021/06/05 15:40:40 [92mIDE     LS <-- CL: REQUEST window/workDoneProgress/create 0: [0m
+2021/06/05 15:40:40 [91mIDE     LS --> CL: ANSWER UNBOUND (0): [0m
+2021/06/05 15:40:40 [91mIDE <-- LS     CL: REQUEST window/workDoneProgress/create 0: [0m
+2021/06/05 15:40:40 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress BEGIN indexing [0m
+2021/06/05 15:40:40 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 0/1 0%[0m
+2021/06/05 15:40:40 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 0/115 0%[0m
+2021/06/05 15:40:40 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 0/115 0%[0m
+2021/06/05 15:40:40 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 0/115 0%[0m
+2021/06/05 15:40:40 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 0/115 0%[0m
+2021/06/05 15:40:40 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 1/115 0.8695652173913043%[0m
+2021/06/05 15:40:40 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 1/115 0.8695652173913043%[0m
+2021/06/05 15:40:40 [92mIDE --> LS     CL: NOTIFICATION textDocument/didOpen: [0m
+2021/06/05 15:40:40 IDE --> textDocument/didOpen notif3 [93m locked[0m
+2021/06/05 15:40:40 IDE --> textDocument/didOpen notif3 (file:///d%3A/project/ESP8266%E8%B5%84%E6%96%99/ESP8266%E5%A4%A9%E6%B0%94%E6%97%B6%E9%92%9F/WeatherClock/ESP8266_WeatherClock/jpeg1.h@1 as 'cpp')
+2021/06/05 15:40:40     URI: 'D:\project\ESP8266资料\ESP8266天气时钟\WeatherClock\ESP8266_WeatherClock\jpeg1.h' -> 'C:\Users\wuhao\AppData\Local\Temp\arduino-language-server402730367\sketch\jpeg1.h'
+2021/06/05 15:40:40 IDE --> textDocument/didOpen notif3 to clang: didOpen(file:///C:/Users/wuhao/AppData/Local/Temp/arduino-language-server402730367/sketch/jpeg1.h@1 as 'cpp')
+2021/06/05 15:40:40 IDE --> textDocument/didOpen notif3 sent to Clang
+2021/06/05 15:40:40 [91mIDE     LS --> CL: NOTIFICATION textDocument/didOpen: [0m
+2021/06/05 15:40:40 IDE --> textDocument/didOpen notif3 [93m unlocked[0m
+2021/06/05 15:40:40 [92mIDE --> LS     CL: REQUEST textDocument/codeAction 1: [0m
+2021/06/05 15:40:40 IDE --> textDocument/codeAction 1 [93m read-locked[0m
+2021/06/05 15:40:40 --> codeAction(file:///d%3A/project/ESP8266%E8%B5%84%E6%96%99/ESP8266%E5%A4%A9%E6%B0%94%E6%97%B6%E9%92%9F/WeatherClock/ESP8266_WeatherClock/ESP8266_WeatherClock.ino:7:24)
+2021/06/05 15:40:40     --> codeAction(file:///C:/Users/wuhao/AppData/Local/Temp/arduino-language-server402730367/sketch/ESP8266_WeatherClock.ino.cpp:9:24)
+2021/06/05 15:40:40 IDE --> textDocument/codeAction 1 sent to Clang
+2021/06/05 15:40:40 [91mIDE     LS --> CL: REQUEST textDocument/codeAction 2: [0m
+2021/06/05 15:40:41 [92mIDE     LS <-- CL: NOTIFICATION textDocument/publishDiagnostics: [0m
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif9 (queued)
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif9 [93m read-locked[0m
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif9 (running)
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif9 publishDiagnostics(file:///C:/Users/wuhao/AppData/Local/Temp/arduino-language-server402730367/sketch/jpeg1.h):
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif9 > 0:0 - 1: drv_unknown_argument_with_suggestion
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif9 > 0:0 - 1: drv_unknown_argument
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif9 > 0:0 - 1: drv_unknown_argument_with_suggestion
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif9 > 0:0 - 1: drv_unknown_argument
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif9 > 1:9 - 1: pp_file_not_found
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif9 > 2:15 - 1: typecheck_incomplete_array_needs_initializer
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif9 > 2:32 - 1: invalid_token_after_toplevel_declarator
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif9 > 46:15 - 1: typecheck_incomplete_array_needs_initializer
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif9 > 46:32 - 1: invalid_token_after_toplevel_declarator
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif9 > 90:15 - 1: typecheck_incomplete_array_needs_initializer
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif9 > 90:32 - 1: invalid_token_after_toplevel_declarator
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif9 > 134:15 - 1: typecheck_incomplete_array_needs_initializer
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif9 > 134:32 - 1: invalid_token_after_toplevel_declarator
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif9 > 178:15 - 1: typecheck_incomplete_array_needs_initializer
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif9 > 178:32 - 1: invalid_token_after_toplevel_declarator
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif9 > 222:15 - 1: typecheck_incomplete_array_needs_initializer
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif9 > 222:32 - 1: invalid_token_after_toplevel_declarator
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif9 > 266:15 - 1: typecheck_incomplete_array_needs_initializer
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif9 > 266:32 - 1: invalid_token_after_toplevel_declarator
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif9 > 310:15 - 1: typecheck_incomplete_array_needs_initializer
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif9 > 310:32 - 1: invalid_token_after_toplevel_declarator
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif9 > 354:15 - 1: typecheck_incomplete_array_needs_initializer
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif9 > 354:32 - 1: invalid_token_after_toplevel_declarator
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif9 > 398:15 - 1: typecheck_incomplete_array_needs_initializer
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif9 > 0:0 - 1: fatal_too_many_errors
+2021/06/05 15:40:41     URI: 'C:\Users\wuhao\AppData\Local\Temp\arduino-language-server402730367\sketch\jpeg1.h' -> 'D:\project\ESP8266资料\ESP8266天气时钟\WeatherClock\ESP8266_WeatherClock\jpeg1.h'
+2021/06/05 15:40:41               as URI: 'file:///d%3A/project/ESP8266%E8%B5%84%E6%96%99/ESP8266%E5%A4%A9%E6%B0%94%E6%97%B6%E9%92%9F/WeatherClock/ESP8266_WeatherClock/jpeg1.h'
+2021/06/05 15:40:41     URI: 'C:\Users\wuhao\AppData\Local\Temp\arduino-language-server402730367\sketch\jpeg1.h' -> 'D:\project\ESP8266资料\ESP8266天气时钟\WeatherClock\ESP8266_WeatherClock\jpeg1.h'
+2021/06/05 15:40:41               as URI: 'file:///d%3A/project/ESP8266%E8%B5%84%E6%96%99/ESP8266%E5%A4%A9%E6%B0%94%E6%97%B6%E9%92%9F/WeatherClock/ESP8266_WeatherClock/jpeg1.h'
+2021/06/05 15:40:41     URI: 'C:\Users\wuhao\AppData\Local\Temp\arduino-language-server402730367\sketch\jpeg1.h' -> 'D:\project\ESP8266资料\ESP8266天气时钟\WeatherClock\ESP8266_WeatherClock\jpeg1.h'
+2021/06/05 15:40:41               as URI: 'file:///d%3A/project/ESP8266%E8%B5%84%E6%96%99/ESP8266%E5%A4%A9%E6%B0%94%E6%97%B6%E9%92%9F/WeatherClock/ESP8266_WeatherClock/jpeg1.h'
+2021/06/05 15:40:41     URI: 'C:\Users\wuhao\AppData\Local\Temp\arduino-language-server402730367\sketch\jpeg1.h' -> 'D:\project\ESP8266资料\ESP8266天气时钟\WeatherClock\ESP8266_WeatherClock\jpeg1.h'
+2021/06/05 15:40:41               as URI: 'file:///d%3A/project/ESP8266%E8%B5%84%E6%96%99/ESP8266%E5%A4%A9%E6%B0%94%E6%97%B6%E9%92%9F/WeatherClock/ESP8266_WeatherClock/jpeg1.h'
+2021/06/05 15:40:41     URI: 'C:\Users\wuhao\AppData\Local\Temp\arduino-language-server402730367\sketch\jpeg1.h' -> 'D:\project\ESP8266资料\ESP8266天气时钟\WeatherClock\ESP8266_WeatherClock\jpeg1.h'
+2021/06/05 15:40:41               as URI: 'file:///d%3A/project/ESP8266%E8%B5%84%E6%96%99/ESP8266%E5%A4%A9%E6%B0%94%E6%97%B6%E9%92%9F/WeatherClock/ESP8266_WeatherClock/jpeg1.h'
+2021/06/05 15:40:41     URI: 'C:\Users\wuhao\AppData\Local\Temp\arduino-language-server402730367\sketch\jpeg1.h' -> 'D:\project\ESP8266资料\ESP8266天气时钟\WeatherClock\ESP8266_WeatherClock\jpeg1.h'
+2021/06/05 15:40:41               as URI: 'file:///d%3A/project/ESP8266%E8%B5%84%E6%96%99/ESP8266%E5%A4%A9%E6%B0%94%E6%97%B6%E9%92%9F/WeatherClock/ESP8266_WeatherClock/jpeg1.h'
+2021/06/05 15:40:41     URI: 'C:\Users\wuhao\AppData\Local\Temp\arduino-language-server402730367\sketch\jpeg1.h' -> 'D:\project\ESP8266资料\ESP8266天气时钟\WeatherClock\ESP8266_WeatherClock\jpeg1.h'
+2021/06/05 15:40:41               as URI: 'file:///d%3A/project/ESP8266%E8%B5%84%E6%96%99/ESP8266%E5%A4%A9%E6%B0%94%E6%97%B6%E9%92%9F/WeatherClock/ESP8266_WeatherClock/jpeg1.h'
+2021/06/05 15:40:41     URI: 'C:\Users\wuhao\AppData\Local\Temp\arduino-language-server402730367\sketch\jpeg1.h' -> 'D:\project\ESP8266资料\ESP8266天气时钟\WeatherClock\ESP8266_WeatherClock\jpeg1.h'
+2021/06/05 15:40:41               as URI: 'file:///d%3A/project/ESP8266%E8%B5%84%E6%96%99/ESP8266%E5%A4%A9%E6%B0%94%E6%97%B6%E9%92%9F/WeatherClock/ESP8266_WeatherClock/jpeg1.h'
+2021/06/05 15:40:41     URI: 'C:\Users\wuhao\AppData\Local\Temp\arduino-language-server402730367\sketch\jpeg1.h' -> 'D:\project\ESP8266资料\ESP8266天气时钟\WeatherClock\ESP8266_WeatherClock\jpeg1.h'
+2021/06/05 15:40:41               as URI: 'file:///d%3A/project/ESP8266%E8%B5%84%E6%96%99/ESP8266%E5%A4%A9%E6%B0%94%E6%97%B6%E9%92%9F/WeatherClock/ESP8266_WeatherClock/jpeg1.h'
+2021/06/05 15:40:41     URI: 'C:\Users\wuhao\AppData\Local\Temp\arduino-language-server402730367\sketch\jpeg1.h' -> 'D:\project\ESP8266资料\ESP8266天气时钟\WeatherClock\ESP8266_WeatherClock\jpeg1.h'
+2021/06/05 15:40:41               as URI: 'file:///d%3A/project/ESP8266%E8%B5%84%E6%96%99/ESP8266%E5%A4%A9%E6%B0%94%E6%97%B6%E9%92%9F/WeatherClock/ESP8266_WeatherClock/jpeg1.h'
+2021/06/05 15:40:41     URI: 'C:\Users\wuhao\AppData\Local\Temp\arduino-language-server402730367\sketch\jpeg1.h' -> 'D:\project\ESP8266资料\ESP8266天气时钟\WeatherClock\ESP8266_WeatherClock\jpeg1.h'
+2021/06/05 15:40:41               as URI: 'file:///d%3A/project/ESP8266%E8%B5%84%E6%96%99/ESP8266%E5%A4%A9%E6%B0%94%E6%97%B6%E9%92%9F/WeatherClock/ESP8266_WeatherClock/jpeg1.h'
+2021/06/05 15:40:41     URI: 'C:\Users\wuhao\AppData\Local\Temp\arduino-language-server402730367\sketch\jpeg1.h' -> 'D:\project\ESP8266资料\ESP8266天气时钟\WeatherClock\ESP8266_WeatherClock\jpeg1.h'
+2021/06/05 15:40:41               as URI: 'file:///d%3A/project/ESP8266%E8%B5%84%E6%96%99/ESP8266%E5%A4%A9%E6%B0%94%E6%97%B6%E9%92%9F/WeatherClock/ESP8266_WeatherClock/jpeg1.h'
+2021/06/05 15:40:41     URI: 'C:\Users\wuhao\AppData\Local\Temp\arduino-language-server402730367\sketch\jpeg1.h' -> 'D:\project\ESP8266资料\ESP8266天气时钟\WeatherClock\ESP8266_WeatherClock\jpeg1.h'
+2021/06/05 15:40:41               as URI: 'file:///d%3A/project/ESP8266%E8%B5%84%E6%96%99/ESP8266%E5%A4%A9%E6%B0%94%E6%97%B6%E9%92%9F/WeatherClock/ESP8266_WeatherClock/jpeg1.h'
+2021/06/05 15:40:41     URI: 'C:\Users\wuhao\AppData\Local\Temp\arduino-language-server402730367\sketch\jpeg1.h' -> 'D:\project\ESP8266资料\ESP8266天气时钟\WeatherClock\ESP8266_WeatherClock\jpeg1.h'
+2021/06/05 15:40:41               as URI: 'file:///d%3A/project/ESP8266%E8%B5%84%E6%96%99/ESP8266%E5%A4%A9%E6%B0%94%E6%97%B6%E9%92%9F/WeatherClock/ESP8266_WeatherClock/jpeg1.h'
+2021/06/05 15:40:41     URI: 'C:\Users\wuhao\AppData\Local\Temp\arduino-language-server402730367\sketch\jpeg1.h' -> 'D:\project\ESP8266资料\ESP8266天气时钟\WeatherClock\ESP8266_WeatherClock\jpeg1.h'
+2021/06/05 15:40:41               as URI: 'file:///d%3A/project/ESP8266%E8%B5%84%E6%96%99/ESP8266%E5%A4%A9%E6%B0%94%E6%97%B6%E9%92%9F/WeatherClock/ESP8266_WeatherClock/jpeg1.h'
+2021/06/05 15:40:41     URI: 'C:\Users\wuhao\AppData\Local\Temp\arduino-language-server402730367\sketch\jpeg1.h' -> 'D:\project\ESP8266资料\ESP8266天气时钟\WeatherClock\ESP8266_WeatherClock\jpeg1.h'
+2021/06/05 15:40:41               as URI: 'file:///d%3A/project/ESP8266%E8%B5%84%E6%96%99/ESP8266%E5%A4%A9%E6%B0%94%E6%97%B6%E9%92%9F/WeatherClock/ESP8266_WeatherClock/jpeg1.h'
+2021/06/05 15:40:41     URI: 'C:\Users\wuhao\AppData\Local\Temp\arduino-language-server402730367\sketch\jpeg1.h' -> 'D:\project\ESP8266资料\ESP8266天气时钟\WeatherClock\ESP8266_WeatherClock\jpeg1.h'
+2021/06/05 15:40:41               as URI: 'file:///d%3A/project/ESP8266%E8%B5%84%E6%96%99/ESP8266%E5%A4%A9%E6%B0%94%E6%97%B6%E9%92%9F/WeatherClock/ESP8266_WeatherClock/jpeg1.h'
+2021/06/05 15:40:41     URI: 'C:\Users\wuhao\AppData\Local\Temp\arduino-language-server402730367\sketch\jpeg1.h' -> 'D:\project\ESP8266资料\ESP8266天气时钟\WeatherClock\ESP8266_WeatherClock\jpeg1.h'
+2021/06/05 15:40:41               as URI: 'file:///d%3A/project/ESP8266%E8%B5%84%E6%96%99/ESP8266%E5%A4%A9%E6%B0%94%E6%97%B6%E9%92%9F/WeatherClock/ESP8266_WeatherClock/jpeg1.h'
+2021/06/05 15:40:41     URI: 'C:\Users\wuhao\AppData\Local\Temp\arduino-language-server402730367\sketch\jpeg1.h' -> 'D:\project\ESP8266资料\ESP8266天气时钟\WeatherClock\ESP8266_WeatherClock\jpeg1.h'
+2021/06/05 15:40:41               as URI: 'file:///d%3A/project/ESP8266%E8%B5%84%E6%96%99/ESP8266%E5%A4%A9%E6%B0%94%E6%97%B6%E9%92%9F/WeatherClock/ESP8266_WeatherClock/jpeg1.h'
+2021/06/05 15:40:41     URI: 'C:\Users\wuhao\AppData\Local\Temp\arduino-language-server402730367\sketch\jpeg1.h' -> 'D:\project\ESP8266资料\ESP8266天气时钟\WeatherClock\ESP8266_WeatherClock\jpeg1.h'
+2021/06/05 15:40:41               as URI: 'file:///d%3A/project/ESP8266%E8%B5%84%E6%96%99/ESP8266%E5%A4%A9%E6%B0%94%E6%97%B6%E9%92%9F/WeatherClock/ESP8266_WeatherClock/jpeg1.h'
+2021/06/05 15:40:41     URI: 'C:\Users\wuhao\AppData\Local\Temp\arduino-language-server402730367\sketch\jpeg1.h' -> 'D:\project\ESP8266资料\ESP8266天气时钟\WeatherClock\ESP8266_WeatherClock\jpeg1.h'
+2021/06/05 15:40:41               as URI: 'file:///d%3A/project/ESP8266%E8%B5%84%E6%96%99/ESP8266%E5%A4%A9%E6%B0%94%E6%97%B6%E9%92%9F/WeatherClock/ESP8266_WeatherClock/jpeg1.h'
+2021/06/05 15:40:41     URI: 'C:\Users\wuhao\AppData\Local\Temp\arduino-language-server402730367\sketch\jpeg1.h' -> 'D:\project\ESP8266资料\ESP8266天气时钟\WeatherClock\ESP8266_WeatherClock\jpeg1.h'
+2021/06/05 15:40:41               as URI: 'file:///d%3A/project/ESP8266%E8%B5%84%E6%96%99/ESP8266%E5%A4%A9%E6%B0%94%E6%97%B6%E9%92%9F/WeatherClock/ESP8266_WeatherClock/jpeg1.h'
+2021/06/05 15:40:41     URI: 'C:\Users\wuhao\AppData\Local\Temp\arduino-language-server402730367\sketch\jpeg1.h' -> 'D:\project\ESP8266资料\ESP8266天气时钟\WeatherClock\ESP8266_WeatherClock\jpeg1.h'
+2021/06/05 15:40:41               as URI: 'file:///d%3A/project/ESP8266%E8%B5%84%E6%96%99/ESP8266%E5%A4%A9%E6%B0%94%E6%97%B6%E9%92%9F/WeatherClock/ESP8266_WeatherClock/jpeg1.h'
+2021/06/05 15:40:41     URI: 'C:\Users\wuhao\AppData\Local\Temp\arduino-language-server402730367\sketch\jpeg1.h' -> 'D:\project\ESP8266资料\ESP8266天气时钟\WeatherClock\ESP8266_WeatherClock\jpeg1.h'
+2021/06/05 15:40:41               as URI: 'file:///d%3A/project/ESP8266%E8%B5%84%E6%96%99/ESP8266%E5%A4%A9%E6%B0%94%E6%97%B6%E9%92%9F/WeatherClock/ESP8266_WeatherClock/jpeg1.h'
+2021/06/05 15:40:41     URI: 'C:\Users\wuhao\AppData\Local\Temp\arduino-language-server402730367\sketch\jpeg1.h' -> 'D:\project\ESP8266资料\ESP8266天气时钟\WeatherClock\ESP8266_WeatherClock\jpeg1.h'
+2021/06/05 15:40:41               as URI: 'file:///d%3A/project/ESP8266%E8%B5%84%E6%96%99/ESP8266%E5%A4%A9%E6%B0%94%E6%97%B6%E9%92%9F/WeatherClock/ESP8266_WeatherClock/jpeg1.h'
+2021/06/05 15:40:41     URI: 'C:\Users\wuhao\AppData\Local\Temp\arduino-language-server402730367\sketch\jpeg1.h' -> 'D:\project\ESP8266资料\ESP8266天气时钟\WeatherClock\ESP8266_WeatherClock\jpeg1.h'
+2021/06/05 15:40:41               as URI: 'file:///d%3A/project/ESP8266%E8%B5%84%E6%96%99/ESP8266%E5%A4%A9%E6%B0%94%E6%97%B6%E9%92%9F/WeatherClock/ESP8266_WeatherClock/jpeg1.h'
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif9 to IDE: publishDiagnostics(file:///d%3A/project/ESP8266%E8%B5%84%E6%96%99/ESP8266%E5%A4%A9%E6%B0%94%E6%97%B6%E9%92%9F/WeatherClock/ESP8266_WeatherClock/jpeg1.h):
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif9 > 0:0 - 1: drv_unknown_argument_with_suggestion
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif9 > 0:0 - 1: drv_unknown_argument
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif9 > 0:0 - 1: drv_unknown_argument_with_suggestion
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif9 > 0:0 - 1: drv_unknown_argument
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif9 > 1:9 - 1: pp_file_not_found
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif9 > 2:15 - 1: typecheck_incomplete_array_needs_initializer
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif9 > 2:32 - 1: invalid_token_after_toplevel_declarator
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif9 > 46:15 - 1: typecheck_incomplete_array_needs_initializer
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif9 > 46:32 - 1: invalid_token_after_toplevel_declarator
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif9 > 90:15 - 1: typecheck_incomplete_array_needs_initializer
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif9 > 90:32 - 1: invalid_token_after_toplevel_declarator
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif9 > 134:15 - 1: typecheck_incomplete_array_needs_initializer
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif9 > 134:32 - 1: invalid_token_after_toplevel_declarator
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif9 > 178:15 - 1: typecheck_incomplete_array_needs_initializer
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif9 > 178:32 - 1: invalid_token_after_toplevel_declarator
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif9 > 222:15 - 1: typecheck_incomplete_array_needs_initializer
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif9 > 222:32 - 1: invalid_token_after_toplevel_declarator
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif9 > 266:15 - 1: typecheck_incomplete_array_needs_initializer
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif9 > 266:32 - 1: invalid_token_after_toplevel_declarator
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif9 > 310:15 - 1: typecheck_incomplete_array_needs_initializer
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif9 > 310:32 - 1: invalid_token_after_toplevel_declarator
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif9 > 354:15 - 1: typecheck_incomplete_array_needs_initializer
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif9 > 354:32 - 1: invalid_token_after_toplevel_declarator
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif9 > 398:15 - 1: typecheck_incomplete_array_needs_initializer
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif9 > 0:0 - 1: fatal_too_many_errors
+2021/06/05 15:40:41 [91mIDE <-- LS     CL: NOTIFICATION textDocument/publishDiagnostics: [0m
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif9 [93m read-unlocked[0m
+2021/06/05 15:40:41 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 2/115 1.7391304347826086%[0m
+2021/06/05 15:40:41 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 2/115 1.7391304347826086%[0m
+2021/06/05 15:40:41 [92mIDE     LS <-- CL: NOTIFICATION textDocument/publishDiagnostics: [0m
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif12 (queued)
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif12 [93m read-locked[0m
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif12 (running)
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif12 publishDiagnostics(file:///C:/Users/wuhao/AppData/Local/Temp/arduino-language-server402730367/sketch/ESP8266_WeatherClock.ino.cpp):
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif12 > 0:0 - 1: drv_unknown_argument_with_suggestion
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif12 > 0:0 - 1: drv_unknown_argument
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif12 > 0:0 - 1: drv_unknown_argument_with_suggestion
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif12 > 0:0 - 1: drv_unknown_argument
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif12 > 0:9 - 1: pp_file_not_found
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif12 > 51:10 - 1: ovl_no_viable_function_in_init
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif12 > 61:9 - 1: pp_file_not_found
+2021/06/05 15:40:41     URI: converted 0:0-0:0 to /not-ino:0:0-0:0
+2021/06/05 15:40:41     URI: converted 0:0-0:0 to /not-ino:0:0-0:0
+2021/06/05 15:40:41 [92mIDE     LS <-- CL: ANSWER textDocument/documentSymbol 1 (1): [0m
+2021/06/05 15:40:41 [92mIDE     LS <-- CL: ANSWER textDocument/codeAction 2 (2): [0m
+2021/06/05 15:40:41 SYLD--- [93m read-locked[0m
+2021/06/05 15:40:41 SYLD---    symbol: Function Web_html 63:0-63:19
+2021/06/05 15:40:41 SYLD---             > void Web_html(void)
+2021/06/05 15:40:41 SYLD---    symbol: Function set_String 65:0-65:41
+2021/06/05 15:40:41 SYLD---             > void set_String(int a, int b, String str)
+2021/06/05 15:40:41 SYLD---    symbol: Function get_String 67:0-67:31
+2021/06/05 15:40:41 SYLD---             > String get_String(int a, int b)
+2021/06/05 15:40:41 SYLD---    symbol: Function handleRoot 69:0-69:17
+2021/06/05 15:40:41 SYLD---             > void handleRoot()
+2021/06/05 15:40:41 SYLD---    symbol: Function HandleVal 71:0-71:16
+2021/06/05 15:40:41 SYLD---             > void HandleVal()
+2021/06/05 15:40:41 SYLD---    symbol: Function handleNotFound 73:0-73:21
+2021/06/05 15:40:41 SYLD---             > void handleNotFound()
+2021/06/05 15:40:41 SYLD---    symbol: Function autoConfig 75:0-75:17
+2021/06/05 15:40:41 SYLD---             > bool autoConfig()
+2021/06/05 15:40:41 SYLD---    symbol: Function htmlConfig 77:0-77:17
+2021/06/05 15:40:41     URI: converted 0:0-0:0 to /not-ino:0:0-0:0
+2021/06/05 15:40:41 SYLD---             > void htmlConfig()
+2021/06/05 15:40:41 SYLD---    symbol: Function printString 79:0-79:71
+2021/06/05 15:40:41 SYLD---             > void printString(int32_t x,int32_t y,int32_t size,const String &string)
+2021/06/05 15:40:41 SYLD---    symbol: Function setup 81:0-81:12
+2021/06/05 15:40:41 SYLD---             > void setup()
+2021/06/05 15:40:41 SYLD---    symbol: Function update_picture 83:0-83:58
+2021/06/05 15:40:41 SYLD---             > void update_picture(int Weather_daima,int32_t x,int32_t y)
+2021/06/05 15:40:41 SYLD---    symbol: Function update_week 85:0-85:51
+2021/06/05 15:40:41 SYLD---             > void update_week(int week_data,int32_t x,int32_t y)
+2021/06/05 15:40:41 SYLD---    symbol: Function loop 87:0-87:11
+2021/06/05 15:40:41 SYLD---             > void loop()
+2021/06/05 15:40:41 SYLD---    symbol: Function Web_html 89:0-114:1
+2021/06/05 15:40:41 SYLD---      TRIMMED> void Web_html(void)
+2021/06/05 15:40:41 SYLD---    symbol: Function set_String 115:0-123:1
+2021/06/05 15:40:41 SYLD---      TRIMMED> void set_String(int a, int b, String str)   //a是长度，b开始存str的值
+2021/06/05 15:40:41 SYLD---    symbol: Function get_String 125:0-133:1
+2021/06/05 15:40:41 SYLD---      TRIMMED> String get_String(int a, int b)
+2021/06/05 15:40:41 SYLD---    symbol: Function handleRoot 140:0-142:1
+2021/06/05 15:40:41 SYLD---      TRIMMED> void handleRoot() 
+2021/06/05 15:40:41 SYLD---    symbol: Function HandleVal 148:0-160:1
+2021/06/05 15:40:41 SYLD---      TRIMMED> void HandleVal()
+2021/06/05 15:40:41 SYLD---    symbol: Function handleNotFound 166:0-181:1
+2021/06/05 15:40:41 SYLD---      TRIMMED> void handleNotFound() 
+2021/06/05 15:40:41 SYLD---    symbol: Function autoConfig 188:0-237:1
+2021/06/05 15:40:41 SYLD---      TRIMMED> bool autoConfig()
+2021/06/05 15:40:41 SYLD---    symbol: Function htmlConfig 243:0-303:1
+2021/06/05 15:40:41 SYLD---      TRIMMED> void htmlConfig()
+2021/06/05 15:40:41 SYLD---    symbol: Function printString 305:0-310:1
+2021/06/05 15:40:41 SYLD---      TRIMMED> void printString(int32_t x,int32_t y,int32_t size,const String &string)
+2021/06/05 15:40:41 SYLD---    symbol: Function setup 316:0-354:1
+2021/06/05 15:40:41 SYLD---      TRIMMED> void setup() 
+2021/06/05 15:40:41 SYLD---    symbol: Function update_picture 359:0-421:1
+2021/06/05 15:40:41 SYLD---      TRIMMED> void update_picture(int Weather_daima,int32_t x,int32_t y)
+2021/06/05 15:40:41 SYLD---    symbol: Function update_week 422:0-454:1
+2021/06/05 15:40:41 SYLD---      TRIMMED> void update_week(int week_data,int32_t x,int32_t y)
+2021/06/05 15:40:41 SYLD---    symbol: Function loop 456:0-710:1
+2021/06/05 15:40:41 SYLD---      TRIMMED> void loop() 
+2021/06/05 15:40:41 SYLD--- [93m read-unlocked[0m
+2021/06/05 15:40:41 SYLD--- (done)
+2021/06/05 15:40:41     <-- codeAction(0 elements)
+2021/06/05 15:40:41 <-- codeAction(0 elements)
+2021/06/05 15:40:41 IDE --> textDocument/codeAction 1 [93m read-unlocked[0m
+2021/06/05 15:40:41 [91mIDE <-- LS     CL: ANSWER UNBOUND (1): [0m
+2021/06/05 15:40:41 [92mIDE --> LS     CL: REQUEST textDocument/codeAction 2: [0m
+2021/06/05 15:40:41 IDE --> textDocument/codeAction 2 [93m read-locked[0m
+2021/06/05 15:40:41 --> codeAction(file:///d%3A/project/ESP8266%E8%B5%84%E6%96%99/ESP8266%E5%A4%A9%E6%B0%94%E6%97%B6%E9%92%9F/WeatherClock/ESP8266_WeatherClock/jpeg1.h:0:0)
+2021/06/05 15:40:41     URI: converted 0:0-0:0 to /not-ino:0:0-0:0
+2021/06/05 15:40:41     URI: 'D:\project\ESP8266资料\ESP8266天气时钟\WeatherClock\ESP8266_WeatherClock\jpeg1.h' -> 'C:\Users\wuhao\AppData\Local\Temp\arduino-language-server402730367\sketch\jpeg1.h'
+2021/06/05 15:40:41     URI: converted 0:9-0:10 to /not-ino:0:9-0:10
+2021/06/05 15:40:41     --> codeAction(file:///C:/Users/wuhao/AppData/Local/Temp/arduino-language-server402730367/sketch/jpeg1.h:0:0)
+2021/06/05 15:40:41 IDE --> textDocument/codeAction 2 sent to Clang
+2021/06/05 15:40:41 [91mIDE     LS --> CL: REQUEST textDocument/codeAction 3: [0m
+2021/06/05 15:40:41     URI: converted 51:10-51:20 to D:\project\ESP8266资料\ESP8266天气时钟\WeatherClock\ESP8266_WeatherClock\ESP8266_WeatherClock.ino:49:10-49:20
+2021/06/05 15:40:41     URI: converted 61:9-61:18 to D:\project\ESP8266资料\ESP8266天气时钟\WeatherClock\ESP8266_WeatherClock\ESP8266_WeatherClock.ino:59:9-59:18
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif12 to IDE: publishDiagnostics(file:///d%3A/project/ESP8266%E8%B5%84%E6%96%99/ESP8266%E5%A4%A9%E6%B0%94%E6%97%B6%E9%92%9F/WeatherClock/ESP8266_WeatherClock/ESP8266_WeatherClock.ino):
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif12 > 49:10 - 1: ovl_no_viable_function_in_init
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif12 > 59:9 - 1: pp_file_not_found
+2021/06/05 15:40:41 [91mIDE <-- LS     CL: NOTIFICATION textDocument/publishDiagnostics: [0m
+2021/06/05 15:40:41 CLG <-- textDocument/publishDiagnostics notif12 [93m read-unlocked[0m
+2021/06/05 15:40:41 [92mIDE     LS <-- CL: ANSWER textDocument/codeAction 3 (3): [0m
+2021/06/05 15:40:41 IDE --> textDocument/codeAction 2 Queued check document symbols
+2021/06/05 15:40:41     <-- codeAction(0 elements)
+2021/06/05 15:40:41 <-- codeAction(0 elements)
+2021/06/05 15:40:41 IDE --> textDocument/codeAction 2 [93m read-unlocked[0m
+2021/06/05 15:40:41 [91mIDE <-- LS     CL: ANSWER UNBOUND (2): [0m
+2021/06/05 15:40:41 [92mIDE --> LS     CL: ANSWER window/workDoneProgress/create 0 (0): [0m
+2021/06/05 15:40:41 SYCK--- [93m read-locked[0m
+2021/06/05 15:40:41 SYCK--- requesting documentSymbol for file:///C:/Users/wuhao/AppData/Local/Temp/arduino-language-server402730367/sketch/ESP8266_WeatherClock.ino.cpp
+2021/06/05 15:40:41 SYCK--- [93m read-unlocked[0m
+2021/06/05 15:40:41 [91mIDE     LS --> CL: REQUEST textDocument/documentSymbol 4: [0m
+2021/06/05 15:40:41 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress BEGIN indexing [0m
+2021/06/05 15:40:41 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 2/115 1.7391304347826086%[0m
+2021/06/05 15:40:41 [92mIDE     LS <-- CL: ANSWER textDocument/documentSymbol 4 (4): [0m
+2021/06/05 15:40:41 SYCK--- [93m read-locked[0m
+2021/06/05 15:40:41 SYCK---    symbol: Function Web_html 63:0-63:19
+2021/06/05 15:40:41 SYCK---             > void Web_html(void)
+2021/06/05 15:40:41 SYCK---    symbol: Function set_String 65:0-65:41
+2021/06/05 15:40:41 SYCK---             > void set_String(int a, int b, String str)
+2021/06/05 15:40:41 SYCK---    symbol: Function get_String 67:0-67:31
+2021/06/05 15:40:41 SYCK---             > String get_String(int a, int b)
+2021/06/05 15:40:41 SYCK---    symbol: Function handleRoot 69:0-69:17
+2021/06/05 15:40:41 SYCK---             > void handleRoot()
+2021/06/05 15:40:41 SYCK---    symbol: Function HandleVal 71:0-71:16
+2021/06/05 15:40:41 SYCK---             > void HandleVal()
+2021/06/05 15:40:41 SYCK---    symbol: Function handleNotFound 73:0-73:21
+2021/06/05 15:40:41 SYCK---             > void handleNotFound()
+2021/06/05 15:40:41 SYCK---    symbol: Function autoConfig 75:0-75:17
+2021/06/05 15:40:41 SYCK---             > bool autoConfig()
+2021/06/05 15:40:41 SYCK---    symbol: Function htmlConfig 77:0-77:17
+2021/06/05 15:40:41 SYCK---             > void htmlConfig()
+2021/06/05 15:40:41 SYCK---    symbol: Function printString 79:0-79:71
+2021/06/05 15:40:41 SYCK---             > void printString(int32_t x,int32_t y,int32_t size,const String &string)
+2021/06/05 15:40:41 SYCK---    symbol: Function setup 81:0-81:12
+2021/06/05 15:40:41 SYCK---             > void setup()
+2021/06/05 15:40:41 SYCK---    symbol: Function update_picture 83:0-83:58
+2021/06/05 15:40:41 SYCK---             > void update_picture(int Weather_daima,int32_t x,int32_t y)
+2021/06/05 15:40:41 SYCK---    symbol: Function update_week 85:0-85:51
+2021/06/05 15:40:41 SYCK---             > void update_week(int week_data,int32_t x,int32_t y)
+2021/06/05 15:40:41 SYCK---    symbol: Function loop 87:0-87:11
+2021/06/05 15:40:41 SYCK---             > void loop()
+2021/06/05 15:40:41 SYCK---    symbol: Function Web_html 89:0-114:1
+2021/06/05 15:40:41 SYCK---      TRIMMED> void Web_html(void)
+2021/06/05 15:40:41 SYCK---    symbol: Function set_String 115:0-123:1
+2021/06/05 15:40:41 SYCK---      TRIMMED> void set_String(int a, int b, String str)   //a是长度，b开始存str的值
+2021/06/05 15:40:41 SYCK---    symbol: Function get_String 125:0-133:1
+2021/06/05 15:40:41 SYCK---      TRIMMED> String get_String(int a, int b)
+2021/06/05 15:40:41 SYCK---    symbol: Function handleRoot 140:0-142:1
+2021/06/05 15:40:41 SYCK---      TRIMMED> void handleRoot() 
+2021/06/05 15:40:41 SYCK---    symbol: Function HandleVal 148:0-160:1
+2021/06/05 15:40:41 SYCK---      TRIMMED> void HandleVal()
+2021/06/05 15:40:41 SYCK---    symbol: Function handleNotFound 166:0-181:1
+2021/06/05 15:40:41 SYCK---      TRIMMED> void handleNotFound() 
+2021/06/05 15:40:41 SYCK---    symbol: Function autoConfig 188:0-237:1
+2021/06/05 15:40:41 SYCK---      TRIMMED> bool autoConfig()
+2021/06/05 15:40:41 SYCK---    symbol: Function htmlConfig 243:0-303:1
+2021/06/05 15:40:41 SYCK---      TRIMMED> void htmlConfig()
+2021/06/05 15:40:41 SYCK---    symbol: Function printString 305:0-310:1
+2021/06/05 15:40:41 SYCK---      TRIMMED> void printString(int32_t x,int32_t y,int32_t size,const String &string)
+2021/06/05 15:40:41 SYCK---    symbol: Function setup 316:0-354:1
+2021/06/05 15:40:41 SYCK---      TRIMMED> void setup() 
+2021/06/05 15:40:41 SYCK---    symbol: Function update_picture 359:0-421:1
+2021/06/05 15:40:41 SYCK---      TRIMMED> void update_picture(int Weather_daima,int32_t x,int32_t y)
+2021/06/05 15:40:41 SYCK---    symbol: Function update_week 422:0-454:1
+2021/06/05 15:40:41 SYCK---      TRIMMED> void update_week(int week_data,int32_t x,int32_t y)
+2021/06/05 15:40:41 SYCK---    symbol: Function loop 456:0-710:1
+2021/06/05 15:40:41 SYCK---      TRIMMED> void loop() 
+2021/06/05 15:40:41 SYCK--- [93m read-unlocked[0m
+2021/06/05 15:40:41 SYCK--- (done)
+2021/06/05 15:40:42 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 3/115 2.608695652173913%[0m
+2021/06/05 15:40:42 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 3/115 2.608695652173913%[0m
+2021/06/05 15:40:42 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 3/115 2.608695652173913%[0m
+2021/06/05 15:40:42 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 3/115 2.608695652173913%[0m
+2021/06/05 15:40:42 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 4/115 3.4782608695652173%[0m
+2021/06/05 15:40:42 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 4/115 3.4782608695652173%[0m
+2021/06/05 15:40:42 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 4/115 3.4782608695652173%[0m
+2021/06/05 15:40:42 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 5/115 4.3478260869565215%[0m
+2021/06/05 15:40:42 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 5/115 4.3478260869565215%[0m
+2021/06/05 15:40:42 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 5/115 4.3478260869565215%[0m
+2021/06/05 15:40:42 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 5/115 4.3478260869565215%[0m
+2021/06/05 15:40:42 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 6/115 5.217391304347826%[0m
+2021/06/05 15:40:42 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 6/115 5.217391304347826%[0m
+2021/06/05 15:40:42 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 6/115 5.217391304347826%[0m
+2021/06/05 15:40:42 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 6/115 5.217391304347826%[0m
+2021/06/05 15:40:43 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 7/115 6.086956521739131%[0m
+2021/06/05 15:40:43 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 7/115 6.086956521739131%[0m
+2021/06/05 15:40:43 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 7/115 6.086956521739131%[0m
+2021/06/05 15:40:43 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 7/115 6.086956521739131%[0m
+2021/06/05 15:40:43 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 8/115 6.956521739130435%[0m
+2021/06/05 15:40:43 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 8/115 6.956521739130435%[0m
+2021/06/05 15:40:43 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 8/115 6.956521739130435%[0m
+2021/06/05 15:40:43 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 9/115 7.826086956521739%[0m
+2021/06/05 15:40:43 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 9/115 7.826086956521739%[0m
+2021/06/05 15:40:43 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 9/115 7.826086956521739%[0m
+2021/06/05 15:40:43 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 10/115 8.695652173913043%[0m
+2021/06/05 15:40:43 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 10/115 8.695652173913043%[0m
+2021/06/05 15:40:43 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 10/115 8.695652173913043%[0m
+2021/06/05 15:40:43 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 10/115 8.695652173913043%[0m
+2021/06/05 15:40:43 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 11/115 9.565217391304348%[0m
+2021/06/05 15:40:43 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 11/115 9.565217391304348%[0m
+2021/06/05 15:40:43 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 11/115 9.565217391304348%[0m
+2021/06/05 15:40:43 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 11/115 9.565217391304348%[0m
+2021/06/05 15:40:43 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 12/115 10.434782608695652%[0m
+2021/06/05 15:40:43 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 12/115 10.434782608695652%[0m
+2021/06/05 15:40:43 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 12/115 10.434782608695652%[0m
+2021/06/05 15:40:43 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 12/115 10.434782608695652%[0m
+2021/06/05 15:40:43 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 13/115 11.304347826086957%[0m
+2021/06/05 15:40:43 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 13/115 11.304347826086957%[0m
+2021/06/05 15:40:43 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 13/115 11.304347826086957%[0m
+2021/06/05 15:40:43 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 13/115 11.304347826086957%[0m
+2021/06/05 15:40:43 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 14/115 12.173913043478262%[0m
+2021/06/05 15:40:43 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 14/115 12.173913043478262%[0m
+2021/06/05 15:40:43 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 14/115 12.173913043478262%[0m
+2021/06/05 15:40:43 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 14/115 12.173913043478262%[0m
+2021/06/05 15:40:43 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 15/115 13.043478260869565%[0m
+2021/06/05 15:40:43 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 15/115 13.043478260869565%[0m
+2021/06/05 15:40:43 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 15/115 13.043478260869565%[0m
+2021/06/05 15:40:43 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 15/115 13.043478260869565%[0m
+2021/06/05 15:40:43 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 16/115 13.91304347826087%[0m
+2021/06/05 15:40:43 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 16/115 13.91304347826087%[0m
+2021/06/05 15:40:43 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 16/115 13.91304347826087%[0m
+2021/06/05 15:40:43 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 16/115 13.91304347826087%[0m
+2021/06/05 15:40:44 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 17/115 14.782608695652174%[0m
+2021/06/05 15:40:44 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 17/115 14.782608695652174%[0m
+2021/06/05 15:40:44 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 17/115 14.782608695652174%[0m
+2021/06/05 15:40:44 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 17/115 14.782608695652174%[0m
+2021/06/05 15:40:48 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 18/115 15.652173913043478%[0m
+2021/06/05 15:40:48 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 18/115 15.652173913043478%[0m
+2021/06/05 15:40:48 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 18/115 15.652173913043478%[0m
+2021/06/05 15:40:48 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 19/115 16.52173913043478%[0m
+2021/06/05 15:40:48 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 19/115 16.52173913043478%[0m
+2021/06/05 15:40:48 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 19/115 16.52173913043478%[0m
+2021/06/05 15:40:49 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 20/115 17.391304347826086%[0m
+2021/06/05 15:40:49 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 20/115 17.391304347826086%[0m
+2021/06/05 15:40:49 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 20/115 17.391304347826086%[0m
+2021/06/05 15:40:49 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 20/115 17.391304347826086%[0m
+2021/06/05 15:40:49 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 21/115 18.26086956521739%[0m
+2021/06/05 15:40:49 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 21/115 18.26086956521739%[0m
+2021/06/05 15:40:49 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 21/115 18.26086956521739%[0m
+2021/06/05 15:40:49 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 22/115 19.130434782608695%[0m
+2021/06/05 15:40:49 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 22/115 19.130434782608695%[0m
+2021/06/05 15:40:49 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 22/115 19.130434782608695%[0m
+2021/06/05 15:40:49 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 22/115 19.130434782608695%[0m
+2021/06/05 15:40:49 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 23/115 20%[0m
+2021/06/05 15:40:49 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 23/115 20%[0m
+2021/06/05 15:40:49 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 23/115 20%[0m
+2021/06/05 15:40:49 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 24/115 20.869565217391305%[0m
+2021/06/05 15:40:49 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 24/115 20.869565217391305%[0m
+2021/06/05 15:40:49 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 24/115 20.869565217391305%[0m
+2021/06/05 15:40:49 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 25/115 21.73913043478261%[0m
+2021/06/05 15:40:49 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 25/115 21.73913043478261%[0m
+2021/06/05 15:40:49 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 25/115 21.73913043478261%[0m
+2021/06/05 15:40:49 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 25/115 21.73913043478261%[0m
+2021/06/05 15:40:49 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 26/115 22.608695652173914%[0m
+2021/06/05 15:40:49 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 26/115 22.608695652173914%[0m
+2021/06/05 15:40:49 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 26/115 22.608695652173914%[0m
+2021/06/05 15:40:49 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 27/115 23.47826086956522%[0m
+2021/06/05 15:40:49 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 27/115 23.47826086956522%[0m
+2021/06/05 15:40:49 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 27/115 23.47826086956522%[0m
+2021/06/05 15:40:49 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 27/115 23.47826086956522%[0m
+2021/06/05 15:40:49 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 28/115 24.347826086956523%[0m
+2021/06/05 15:40:49 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 28/115 24.347826086956523%[0m
+2021/06/05 15:40:49 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 28/115 24.347826086956523%[0m
+2021/06/05 15:40:49 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 28/115 24.347826086956523%[0m
+2021/06/05 15:40:49 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 29/115 25.217391304347824%[0m
+2021/06/05 15:40:49 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 29/115 25.217391304347824%[0m
+2021/06/05 15:40:49 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 29/115 25.217391304347824%[0m
+2021/06/05 15:40:49 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 29/115 25.217391304347824%[0m
+2021/06/05 15:40:49 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 30/115 26.08695652173913%[0m
+2021/06/05 15:40:49 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 30/115 26.08695652173913%[0m
+2021/06/05 15:40:49 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 30/115 26.08695652173913%[0m
+2021/06/05 15:40:49 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 30/115 26.08695652173913%[0m
+2021/06/05 15:40:50 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 31/115 26.956521739130434%[0m
+2021/06/05 15:40:50 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 31/115 26.956521739130434%[0m
+2021/06/05 15:40:50 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 31/115 26.956521739130434%[0m
+2021/06/05 15:40:50 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 31/115 26.956521739130434%[0m
+2021/06/05 15:40:50 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 32/115 27.82608695652174%[0m
+2021/06/05 15:40:50 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 32/115 27.82608695652174%[0m
+2021/06/05 15:40:50 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 32/115 27.82608695652174%[0m
+2021/06/05 15:40:50 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 32/115 27.82608695652174%[0m
+2021/06/05 15:40:50 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 33/115 28.695652173913043%[0m
+2021/06/05 15:40:50 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 33/115 28.695652173913043%[0m
+2021/06/05 15:40:50 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 33/115 28.695652173913043%[0m
+2021/06/05 15:40:50 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 33/115 28.695652173913043%[0m
+2021/06/05 15:40:50 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 34/115 29.565217391304348%[0m
+2021/06/05 15:40:50 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 34/115 29.565217391304348%[0m
+2021/06/05 15:40:50 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 34/115 29.565217391304348%[0m
+2021/06/05 15:40:50 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 34/115 29.565217391304348%[0m
+2021/06/05 15:40:50 [92mIDE --> LS     CL: REQUEST textDocument/codeAction 3: [0m
+2021/06/05 15:40:50 IDE --> textDocument/codeAction 3 [93m read-locked[0m
+2021/06/05 15:40:50 --> codeAction(file:///d%3A/project/ESP8266%E8%B5%84%E6%96%99/ESP8266%E5%A4%A9%E6%B0%94%E6%97%B6%E9%92%9F/WeatherClock/ESP8266_WeatherClock/jpeg1.h:0:0)
+2021/06/05 15:40:50     URI: 'D:\project\ESP8266资料\ESP8266天气时钟\WeatherClock\ESP8266_WeatherClock\jpeg1.h' -> 'C:\Users\wuhao\AppData\Local\Temp\arduino-language-server402730367\sketch\jpeg1.h'
+2021/06/05 15:40:50     --> codeAction(file:///C:/Users/wuhao/AppData/Local/Temp/arduino-language-server402730367/sketch/jpeg1.h:0:0)
+2021/06/05 15:40:50 IDE --> textDocument/codeAction 3 sent to Clang
+2021/06/05 15:40:50 [91mIDE     LS --> CL: REQUEST textDocument/codeAction 5: [0m
+2021/06/05 15:40:50 [92mIDE     LS <-- CL: ANSWER textDocument/codeAction 5 (5): [0m
+2021/06/05 15:40:50     <-- codeAction(0 elements)
+2021/06/05 15:40:50 <-- codeAction(0 elements)
+2021/06/05 15:40:50 IDE --> textDocument/codeAction 3 [93m read-unlocked[0m
+2021/06/05 15:40:50 [91mIDE <-- LS     CL: ANSWER UNBOUND (3): [0m
+2021/06/05 15:40:50 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 35/115 30.434782608695652%[0m
+2021/06/05 15:40:50 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 35/115 30.434782608695652%[0m
+2021/06/05 15:40:50 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 35/115 30.434782608695652%[0m
+2021/06/05 15:40:50 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 35/115 30.434782608695652%[0m
+2021/06/05 15:40:50 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 36/115 31.304347826086957%[0m
+2021/06/05 15:40:50 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 36/115 31.304347826086957%[0m
+2021/06/05 15:40:50 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 36/115 31.304347826086957%[0m
+2021/06/05 15:40:50 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 36/115 31.304347826086957%[0m
+2021/06/05 15:40:50 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 37/115 32.17391304347826%[0m
+2021/06/05 15:40:50 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 37/115 32.17391304347826%[0m
+2021/06/05 15:40:50 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 37/115 32.17391304347826%[0m
+2021/06/05 15:40:50 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 37/115 32.17391304347826%[0m
+2021/06/05 15:40:50 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 38/115 33.04347826086956%[0m
+2021/06/05 15:40:50 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 38/115 33.04347826086956%[0m
+2021/06/05 15:40:50 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 38/115 33.04347826086956%[0m
+2021/06/05 15:40:50 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 38/115 33.04347826086956%[0m
+2021/06/05 15:40:50 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 39/115 33.91304347826087%[0m
+2021/06/05 15:40:50 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 39/115 33.91304347826087%[0m
+2021/06/05 15:40:50 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 39/115 33.91304347826087%[0m
+2021/06/05 15:40:50 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 39/115 33.91304347826087%[0m
+2021/06/05 15:40:51 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 40/115 34.78260869565217%[0m
+2021/06/05 15:40:51 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 40/115 34.78260869565217%[0m
+2021/06/05 15:40:51 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 40/115 34.78260869565217%[0m
+2021/06/05 15:40:51 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 40/115 34.78260869565217%[0m
+2021/06/05 15:40:51 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 41/115 35.65217391304348%[0m
+2021/06/05 15:40:51 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 41/115 35.65217391304348%[0m
+2021/06/05 15:40:51 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 41/115 35.65217391304348%[0m
+2021/06/05 15:40:51 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 42/115 36.52173913043478%[0m
+2021/06/05 15:40:51 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 42/115 36.52173913043478%[0m
+2021/06/05 15:40:51 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 42/115 36.52173913043478%[0m
+2021/06/05 15:40:51 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 43/115 37.391304347826086%[0m
+2021/06/05 15:40:51 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 43/115 37.391304347826086%[0m
+2021/06/05 15:40:51 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 43/115 37.391304347826086%[0m
+2021/06/05 15:40:51 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 43/115 37.391304347826086%[0m
+2021/06/05 15:40:51 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 44/115 38.26086956521739%[0m
+2021/06/05 15:40:51 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 44/115 38.26086956521739%[0m
+2021/06/05 15:40:51 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 44/115 38.26086956521739%[0m
+2021/06/05 15:40:51 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 44/115 38.26086956521739%[0m
+2021/06/05 15:40:51 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 45/115 39.130434782608695%[0m
+2021/06/05 15:40:51 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 45/115 39.130434782608695%[0m
+2021/06/05 15:40:51 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 45/115 39.130434782608695%[0m
+2021/06/05 15:40:51 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 45/115 39.130434782608695%[0m
+2021/06/05 15:40:51 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 46/115 40%[0m
+2021/06/05 15:40:51 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 46/115 40%[0m
+2021/06/05 15:40:51 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 46/115 40%[0m
+2021/06/05 15:40:51 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 47/115 40.869565217391305%[0m
+2021/06/05 15:40:51 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 47/115 40.869565217391305%[0m
+2021/06/05 15:40:51 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 47/115 40.869565217391305%[0m
+2021/06/05 15:40:51 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 48/115 41.73913043478261%[0m
+2021/06/05 15:40:51 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 48/115 41.73913043478261%[0m
+2021/06/05 15:40:51 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 48/115 41.73913043478261%[0m
+2021/06/05 15:40:51 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 48/115 41.73913043478261%[0m
+2021/06/05 15:40:51 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 49/115 42.608695652173914%[0m
+2021/06/05 15:40:51 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 49/115 42.608695652173914%[0m
+2021/06/05 15:40:51 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 49/115 42.608695652173914%[0m
+2021/06/05 15:40:51 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 49/115 42.608695652173914%[0m
+2021/06/05 15:40:51 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 50/115 43.47826086956522%[0m
+2021/06/05 15:40:51 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 50/115 43.47826086956522%[0m
+2021/06/05 15:40:51 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 50/115 43.47826086956522%[0m
+2021/06/05 15:40:51 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 50/115 43.47826086956522%[0m
+2021/06/05 15:40:51 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 51/115 44.34782608695652%[0m
+2021/06/05 15:40:51 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 51/115 44.34782608695652%[0m
+2021/06/05 15:40:51 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 51/115 44.34782608695652%[0m
+2021/06/05 15:40:51 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 51/115 44.34782608695652%[0m
+2021/06/05 15:40:51 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 52/115 45.21739130434783%[0m
+2021/06/05 15:40:51 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 52/115 45.21739130434783%[0m
+2021/06/05 15:40:51 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 52/115 45.21739130434783%[0m
+2021/06/05 15:40:51 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 52/115 45.21739130434783%[0m
+2021/06/05 15:40:52 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 53/115 46.08695652173913%[0m
+2021/06/05 15:40:52 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 53/115 46.08695652173913%[0m
+2021/06/05 15:40:52 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 53/115 46.08695652173913%[0m
+2021/06/05 15:40:52 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 53/115 46.08695652173913%[0m
+2021/06/05 15:40:52 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 54/115 46.95652173913044%[0m
+2021/06/05 15:40:52 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 54/115 46.95652173913044%[0m
+2021/06/05 15:40:52 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 54/115 46.95652173913044%[0m
+2021/06/05 15:40:52 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 54/115 46.95652173913044%[0m
+2021/06/05 15:40:52 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 55/115 47.82608695652174%[0m
+2021/06/05 15:40:52 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 55/115 47.82608695652174%[0m
+2021/06/05 15:40:52 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 55/115 47.82608695652174%[0m
+2021/06/05 15:40:52 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 55/115 47.82608695652174%[0m
+2021/06/05 15:40:52 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 56/115 48.69565217391305%[0m
+2021/06/05 15:40:52 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 56/115 48.69565217391305%[0m
+2021/06/05 15:40:52 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 56/115 48.69565217391305%[0m
+2021/06/05 15:40:52 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 56/115 48.69565217391305%[0m
+2021/06/05 15:40:52 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 57/115 49.56521739130435%[0m
+2021/06/05 15:40:52 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 57/115 49.56521739130435%[0m
+2021/06/05 15:40:52 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 57/115 49.56521739130435%[0m
+2021/06/05 15:40:52 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 57/115 49.56521739130435%[0m
+2021/06/05 15:40:52 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 58/115 50.43478260869565%[0m
+2021/06/05 15:40:52 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 58/115 50.43478260869565%[0m
+2021/06/05 15:40:52 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 58/115 50.43478260869565%[0m
+2021/06/05 15:40:52 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 58/115 50.43478260869565%[0m
+2021/06/05 15:40:52 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 59/115 51.30434782608695%[0m
+2021/06/05 15:40:52 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 59/115 51.30434782608695%[0m
+2021/06/05 15:40:52 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 59/115 51.30434782608695%[0m
+2021/06/05 15:40:52 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 59/115 51.30434782608695%[0m
+2021/06/05 15:40:52 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 60/115 52.17391304347826%[0m
+2021/06/05 15:40:52 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 60/115 52.17391304347826%[0m
+2021/06/05 15:40:52 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 60/115 52.17391304347826%[0m
+2021/06/05 15:40:52 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 60/115 52.17391304347826%[0m
+2021/06/05 15:40:52 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 61/115 53.04347826086956%[0m
+2021/06/05 15:40:52 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 61/115 53.04347826086956%[0m
+2021/06/05 15:40:52 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 61/115 53.04347826086956%[0m
+2021/06/05 15:40:52 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 61/115 53.04347826086956%[0m
+2021/06/05 15:40:53 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 62/115 53.91304347826087%[0m
+2021/06/05 15:40:53 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 62/115 53.91304347826087%[0m
+2021/06/05 15:40:53 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 62/115 53.91304347826087%[0m
+2021/06/05 15:40:53 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 62/115 53.91304347826087%[0m
+2021/06/05 15:40:53 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 63/115 54.78260869565217%[0m
+2021/06/05 15:40:53 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 63/115 54.78260869565217%[0m
+2021/06/05 15:40:53 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 63/115 54.78260869565217%[0m
+2021/06/05 15:40:53 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 64/115 55.65217391304348%[0m
+2021/06/05 15:40:53 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 64/115 55.65217391304348%[0m
+2021/06/05 15:40:53 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 64/115 55.65217391304348%[0m
+2021/06/05 15:40:53 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 64/115 55.65217391304348%[0m
+2021/06/05 15:40:53 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 65/115 56.52173913043478%[0m
+2021/06/05 15:40:53 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 65/115 56.52173913043478%[0m
+2021/06/05 15:40:53 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 65/115 56.52173913043478%[0m
+2021/06/05 15:40:53 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 66/115 57.391304347826086%[0m
+2021/06/05 15:40:53 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 66/115 57.391304347826086%[0m
+2021/06/05 15:40:53 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 66/115 57.391304347826086%[0m
+2021/06/05 15:40:53 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 67/115 58.26086956521739%[0m
+2021/06/05 15:40:53 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 67/115 58.26086956521739%[0m
+2021/06/05 15:40:53 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 67/115 58.26086956521739%[0m
+2021/06/05 15:40:53 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 67/115 58.26086956521739%[0m
+2021/06/05 15:40:53 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 68/115 59.130434782608695%[0m
+2021/06/05 15:40:53 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 68/115 59.130434782608695%[0m
+2021/06/05 15:40:53 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 68/115 59.130434782608695%[0m
+2021/06/05 15:40:53 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 68/115 59.130434782608695%[0m
+2021/06/05 15:40:53 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 69/115 60%[0m
+2021/06/05 15:40:53 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 69/115 60%[0m
+2021/06/05 15:40:53 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 69/115 60%[0m
+2021/06/05 15:40:53 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 69/115 60%[0m
+2021/06/05 15:40:53 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 70/115 60.869565217391305%[0m
+2021/06/05 15:40:53 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 70/115 60.869565217391305%[0m
+2021/06/05 15:40:53 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 70/115 60.869565217391305%[0m
+2021/06/05 15:40:53 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 70/115 60.869565217391305%[0m
+2021/06/05 15:40:53 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 71/115 61.73913043478261%[0m
+2021/06/05 15:40:53 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 71/115 61.73913043478261%[0m
+2021/06/05 15:40:53 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 71/115 61.73913043478261%[0m
+2021/06/05 15:40:53 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 71/115 61.73913043478261%[0m
+2021/06/05 15:40:53 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 72/115 62.608695652173914%[0m
+2021/06/05 15:40:53 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 72/115 62.608695652173914%[0m
+2021/06/05 15:40:53 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 72/115 62.608695652173914%[0m
+2021/06/05 15:40:53 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 72/115 62.608695652173914%[0m
+2021/06/05 15:40:54 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 73/115 63.47826086956522%[0m
+2021/06/05 15:40:54 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 73/115 63.47826086956522%[0m
+2021/06/05 15:40:54 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 73/115 63.47826086956522%[0m
+2021/06/05 15:40:54 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 74/115 64.34782608695652%[0m
+2021/06/05 15:40:54 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 74/115 64.34782608695652%[0m
+2021/06/05 15:40:54 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 74/115 64.34782608695652%[0m
+2021/06/05 15:40:54 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 75/115 65.21739130434783%[0m
+2021/06/05 15:40:54 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 75/115 65.21739130434783%[0m
+2021/06/05 15:40:54 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 75/115 65.21739130434783%[0m
+2021/06/05 15:40:54 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 75/115 65.21739130434783%[0m
+2021/06/05 15:40:54 [92mIDE --> LS     CL: REQUEST textDocument/codeAction 4: [0m
+2021/06/05 15:40:54 IDE --> textDocument/codeAction 4 [93m read-locked[0m
+2021/06/05 15:40:54 --> codeAction(file:///d%3A/project/ESP8266%E8%B5%84%E6%96%99/ESP8266%E5%A4%A9%E6%B0%94%E6%97%B6%E9%92%9F/WeatherClock/ESP8266_WeatherClock/ESP8266_WeatherClock.ino:7:24)
+2021/06/05 15:40:54     --> codeAction(file:///C:/Users/wuhao/AppData/Local/Temp/arduino-language-server402730367/sketch/ESP8266_WeatherClock.ino.cpp:9:24)
+2021/06/05 15:40:54 IDE --> textDocument/codeAction 4 sent to Clang
+2021/06/05 15:40:54 [91mIDE     LS --> CL: REQUEST textDocument/codeAction 6: [0m
+2021/06/05 15:40:54 [92mIDE     LS <-- CL: ANSWER textDocument/codeAction 6 (6): [0m
+2021/06/05 15:40:54     <-- codeAction(0 elements)
+2021/06/05 15:40:54 <-- codeAction(0 elements)
+2021/06/05 15:40:54 IDE --> textDocument/codeAction 4 [93m read-unlocked[0m
+2021/06/05 15:40:54 [91mIDE <-- LS     CL: ANSWER UNBOUND (4): [0m
+2021/06/05 15:40:54 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 76/115 66.08695652173913%[0m
+2021/06/05 15:40:54 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 76/115 66.08695652173913%[0m
+2021/06/05 15:40:54 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 76/115 66.08695652173913%[0m
+2021/06/05 15:40:54 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 76/115 66.08695652173913%[0m
+2021/06/05 15:40:54 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 77/115 66.95652173913044%[0m
+2021/06/05 15:40:54 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 77/115 66.95652173913044%[0m
+2021/06/05 15:40:54 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 77/115 66.95652173913044%[0m
+2021/06/05 15:40:54 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 77/115 66.95652173913044%[0m
+2021/06/05 15:40:56 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 78/115 67.82608695652173%[0m
+2021/06/05 15:40:56 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 78/115 67.82608695652173%[0m
+2021/06/05 15:40:56 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 79/115 68.69565217391305%[0m
+2021/06/05 15:40:56 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 79/115 68.69565217391305%[0m
+2021/06/05 15:40:56 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 79/115 68.69565217391305%[0m
+2021/06/05 15:40:57 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 80/115 69.56521739130434%[0m
+2021/06/05 15:40:57 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 80/115 69.56521739130434%[0m
+2021/06/05 15:40:57 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 80/115 69.56521739130434%[0m
+2021/06/05 15:40:57 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 81/115 70.43478260869566%[0m
+2021/06/05 15:40:57 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 81/115 70.43478260869566%[0m
+2021/06/05 15:40:57 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 81/115 70.43478260869566%[0m
+2021/06/05 15:40:57 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 81/115 70.43478260869566%[0m
+2021/06/05 15:40:57 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 82/115 71.30434782608695%[0m
+2021/06/05 15:40:57 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 82/115 71.30434782608695%[0m
+2021/06/05 15:40:57 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 82/115 71.30434782608695%[0m
+2021/06/05 15:40:57 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 83/115 72.17391304347827%[0m
+2021/06/05 15:40:57 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 83/115 72.17391304347827%[0m
+2021/06/05 15:40:57 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 83/115 72.17391304347827%[0m
+2021/06/05 15:40:57 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 83/115 72.17391304347827%[0m
+2021/06/05 15:40:58 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 84/115 73.04347826086956%[0m
+2021/06/05 15:40:58 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 84/115 73.04347826086956%[0m
+2021/06/05 15:40:58 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 84/115 73.04347826086956%[0m
+2021/06/05 15:40:58 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 84/115 73.04347826086956%[0m
+2021/06/05 15:40:58 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 85/115 73.91304347826087%[0m
+2021/06/05 15:40:58 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 85/115 73.91304347826087%[0m
+2021/06/05 15:40:58 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 85/115 73.91304347826087%[0m
+2021/06/05 15:40:58 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 85/115 73.91304347826087%[0m
+2021/06/05 15:40:58 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 86/115 74.78260869565217%[0m
+2021/06/05 15:40:58 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 86/115 74.78260869565217%[0m
+2021/06/05 15:40:58 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 86/115 74.78260869565217%[0m
+2021/06/05 15:40:58 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 86/115 74.78260869565217%[0m
+2021/06/05 15:40:58 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 87/115 75.65217391304348%[0m
+2021/06/05 15:40:58 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 87/115 75.65217391304348%[0m
+2021/06/05 15:40:58 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 87/115 75.65217391304348%[0m
+2021/06/05 15:40:58 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 87/115 75.65217391304348%[0m
+2021/06/05 15:40:58 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 88/115 76.52173913043478%[0m
+2021/06/05 15:40:58 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 88/115 76.52173913043478%[0m
+2021/06/05 15:40:58 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 88/115 76.52173913043478%[0m
+2021/06/05 15:40:58 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 88/115 76.52173913043478%[0m
+2021/06/05 15:40:58 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 89/115 77.3913043478261%[0m
+2021/06/05 15:40:58 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 89/115 77.3913043478261%[0m
+2021/06/05 15:40:58 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 89/115 77.3913043478261%[0m
+2021/06/05 15:40:58 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 90/115 78.26086956521739%[0m
+2021/06/05 15:40:58 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 90/115 78.26086956521739%[0m
+2021/06/05 15:40:58 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 90/115 78.26086956521739%[0m
+2021/06/05 15:40:58 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 90/115 78.26086956521739%[0m
+2021/06/05 15:40:59 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 91/115 79.1304347826087%[0m
+2021/06/05 15:40:59 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 91/115 79.1304347826087%[0m
+2021/06/05 15:40:59 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 91/115 79.1304347826087%[0m
+2021/06/05 15:40:59 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 91/115 79.1304347826087%[0m
+2021/06/05 15:40:59 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 92/115 80%[0m
+2021/06/05 15:40:59 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 92/115 80%[0m
+2021/06/05 15:40:59 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 92/115 80%[0m
+2021/06/05 15:40:59 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 92/115 80%[0m
+2021/06/05 15:40:59 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 93/115 80.8695652173913%[0m
+2021/06/05 15:40:59 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 93/115 80.8695652173913%[0m
+2021/06/05 15:40:59 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 93/115 80.8695652173913%[0m
+2021/06/05 15:40:59 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 93/115 80.8695652173913%[0m
+2021/06/05 15:40:59 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 94/115 81.73913043478261%[0m
+2021/06/05 15:40:59 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 94/115 81.73913043478261%[0m
+2021/06/05 15:40:59 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 94/115 81.73913043478261%[0m
+2021/06/05 15:40:59 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 94/115 81.73913043478261%[0m
+2021/06/05 15:40:59 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 95/115 82.6086956521739%[0m
+2021/06/05 15:40:59 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 95/115 82.6086956521739%[0m
+2021/06/05 15:40:59 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 95/115 82.6086956521739%[0m
+2021/06/05 15:40:59 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 95/115 82.6086956521739%[0m
+2021/06/05 15:40:59 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 96/115 83.47826086956522%[0m
+2021/06/05 15:40:59 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 96/115 83.47826086956522%[0m
+2021/06/05 15:40:59 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 96/115 83.47826086956522%[0m
+2021/06/05 15:40:59 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 96/115 83.47826086956522%[0m
+2021/06/05 15:41:00 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 97/115 84.34782608695652%[0m
+2021/06/05 15:41:00 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 97/115 84.34782608695652%[0m
+2021/06/05 15:41:00 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 97/115 84.34782608695652%[0m
+2021/06/05 15:41:00 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 97/115 84.34782608695652%[0m
+2021/06/05 15:41:00 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 98/115 85.21739130434783%[0m
+2021/06/05 15:41:00 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 98/115 85.21739130434783%[0m
+2021/06/05 15:41:00 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 98/115 85.21739130434783%[0m
+2021/06/05 15:41:00 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 99/115 86.08695652173913%[0m
+2021/06/05 15:41:00 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 99/115 86.08695652173913%[0m
+2021/06/05 15:41:00 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 99/115 86.08695652173913%[0m
+2021/06/05 15:41:00 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 99/115 86.08695652173913%[0m
+2021/06/05 15:41:00 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 100/115 86.95652173913044%[0m
+2021/06/05 15:41:00 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 100/115 86.95652173913044%[0m
+2021/06/05 15:41:00 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 100/115 86.95652173913044%[0m
+2021/06/05 15:41:00 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 100/115 86.95652173913044%[0m
+2021/06/05 15:41:00 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 101/115 87.82608695652173%[0m
+2021/06/05 15:41:00 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 101/115 87.82608695652173%[0m
+2021/06/05 15:41:00 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 101/115 87.82608695652173%[0m
+2021/06/05 15:41:00 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 102/115 88.69565217391305%[0m
+2021/06/05 15:41:00 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 102/115 88.69565217391305%[0m
+2021/06/05 15:41:00 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 102/115 88.69565217391305%[0m
+2021/06/05 15:41:00 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 103/115 89.56521739130434%[0m
+2021/06/05 15:41:00 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 103/115 89.56521739130434%[0m
+2021/06/05 15:41:00 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 103/115 89.56521739130434%[0m
+2021/06/05 15:41:00 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 103/115 89.56521739130434%[0m
+2021/06/05 15:41:00 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 104/115 90.43478260869566%[0m
+2021/06/05 15:41:00 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 104/115 90.43478260869566%[0m
+2021/06/05 15:41:00 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 104/115 90.43478260869566%[0m
+2021/06/05 15:41:00 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 105/115 91.30434782608695%[0m
+2021/06/05 15:41:00 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 105/115 91.30434782608695%[0m
+2021/06/05 15:41:00 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 105/115 91.30434782608695%[0m
+2021/06/05 15:41:00 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 106/115 92.17391304347827%[0m
+2021/06/05 15:41:00 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 106/115 92.17391304347827%[0m
+2021/06/05 15:41:00 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 106/115 92.17391304347827%[0m
+2021/06/05 15:41:00 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 106/115 92.17391304347827%[0m
+2021/06/05 15:41:00 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 107/115 93.04347826086956%[0m
+2021/06/05 15:41:00 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 107/115 93.04347826086956%[0m
+2021/06/05 15:41:00 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 107/115 93.04347826086956%[0m
+2021/06/05 15:41:00 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 107/115 93.04347826086956%[0m
+2021/06/05 15:41:00 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 108/115 93.91304347826087%[0m
+2021/06/05 15:41:00 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 108/115 93.91304347826087%[0m
+2021/06/05 15:41:00 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 108/115 93.91304347826087%[0m
+2021/06/05 15:41:00 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 109/115 94.78260869565217%[0m
+2021/06/05 15:41:00 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 109/115 94.78260869565217%[0m
+2021/06/05 15:41:00 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 109/115 94.78260869565217%[0m
+2021/06/05 15:41:00 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 109/115 94.78260869565217%[0m
+2021/06/05 15:41:00 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 110/115 95.65217391304348%[0m
+2021/06/05 15:41:00 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 110/115 95.65217391304348%[0m
+2021/06/05 15:41:00 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 110/115 95.65217391304348%[0m
+2021/06/05 15:41:00 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 110/115 95.65217391304348%[0m
+2021/06/05 15:41:00 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 111/115 96.52173913043478%[0m
+2021/06/05 15:41:00 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 111/115 96.52173913043478%[0m
+2021/06/05 15:41:00 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 111/115 96.52173913043478%[0m
+2021/06/05 15:41:00 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 111/115 96.52173913043478%[0m
+2021/06/05 15:41:00 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 112/115 97.3913043478261%[0m
+2021/06/05 15:41:00 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 112/115 97.3913043478261%[0m
+2021/06/05 15:41:00 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 113/115 98.26086956521739%[0m
+2021/06/05 15:41:00 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 113/115 98.26086956521739%[0m
+2021/06/05 15:41:01 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 114/115 99.1304347826087%[0m
+2021/06/05 15:41:01 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress REPORT 114/115 99.1304347826087%[0m
+2021/06/05 15:41:01 [92mIDE     LS <-- CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress END [0m
+2021/06/05 15:41:01 [91mIDE <-- LS     CL: NOTIFICATION $/progress: TOKEN=backgroundIndexProgress END [0m
+2021/06/05 15:49:05 [92mIDE --> LS     CL: REQUEST shutdown 5: [0m
+2021/06/05 15:49:05 IDE --> shutdown 5 [93m read-locked[0m
+2021/06/05 15:49:05 IDE --> shutdown 5 sent to Clang
+2021/06/05 15:49:05 [91mIDE     LS --> CL: REQUEST shutdown 7: [0m
+2021/06/05 15:49:05 [92mIDE     LS <-- CL: ANSWER shutdown 7 (7): [0m
+2021/06/05 15:49:05 IDE --> shutdown 5 [93m read-unlocked[0m
+2021/06/05 15:49:05 [91mIDE <-- LS     CL: ANSWER UNBOUND (5): [0m
+2021/06/05 15:49:05 [92mIDE --> LS     CL: NOTIFICATION exit: [0m
+2021/06/05 15:49:05 IDE --> exit notif4 [93m read-locked[0m
+2021/06/05 15:49:05 IDE --> exit notif4 sent to Clang
+2021/06/05 15:49:05 [91mIDE     LS --> CL: NOTIFICATION exit: [0m
+2021/06/05 15:49:05 IDE --> exit notif4 [93m read-unlocked[0m
+2021/06/05 15:49:05 Lost connection with clangd!
+2021/06/05 15:49:05 removing buildpath
