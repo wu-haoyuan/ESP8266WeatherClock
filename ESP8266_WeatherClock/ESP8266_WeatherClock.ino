@@ -31,7 +31,7 @@ void setup() {
 	                          //HTML配网  
   if(EEPROM.read(0) == 0)
   {
-    Location = "101230306";
+    Location = "*********";
   }
   else
   {
