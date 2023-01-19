@@ -9,6 +9,7 @@
 
 - ESP8266库安装  参考太极创客的教程 https://www.bilibili.com/video/BV1L7411c7jw?t=991&p=5
 - NTPClient、TFT_eSPI、ArduinoJson以上的库都能在ArduinoIDE中项目-加载库-管理库中找到
+- 修改TFT_eSPI库的User_Setup.h取消ST7735_DRIVER注释并注释其他驱动，TFT_WIDTH选128，TFT_HEIGHT选160
 - 和风天气库的[链接](https://github.com/Ldufan/ESP8266_Heweather)
 
 ## 硬件
